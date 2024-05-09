@@ -287,6 +287,20 @@ section.wholesale {
 	.info-date{
 		display: none;
 	}
+
+	.whosale-section .main-text{ 
+		p:not(.text-bold){
+			font-weight: 300;
+		}
+
+		p{
+			font-size: 15px;
+		}
+
+		ul li{
+			font-weight: 300;
+			text-align: left;
+			font-size: 15px;
+		}
+	}
 }
-
-

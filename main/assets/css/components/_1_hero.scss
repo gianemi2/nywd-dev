@@ -198,9 +198,9 @@ p{
  
   .hero.banner-home-charriol {
 	background-position: 0 0;
-	width: 100%;
+	width: 95%;
 	height: 560px;
-	margin-top: 0px;
+	margin: 0px auto;
 	.main-charriol{
 		padding: 0;
 		width: 100%;
@@ -242,8 +242,17 @@ p{
 			  color: var(--color-primary);
 			  padding: 20px 0;
 			  text-align: center;
+			  font-size: 15px;
+			  font-weight: 300;
 		  }
 	  }
   }
   
+}
+
+@media only screen and (max-width: 500px) {
+	.hero.banner-home-charriol .main-charriol .main-charriol-text h3 {
+		font-size: 25px;
+		font-weight: 500;
+	}
 }

@@ -100,6 +100,12 @@
   width: 19px;
 }
 
+@media only screen and (max-width: 500px) {
+  .btn.btn--primary{
+    font-size: 20px;
+  }
+}
+
 // --------------------------------
 
 // (END) Global editor code

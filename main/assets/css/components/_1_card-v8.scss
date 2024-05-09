@@ -17,6 +17,13 @@ Usage: codyhouse.co/license
    margin: 30px auto 30px;
   }
 }
+@media only screen and (max-width: 500px){
+  .why-chose-mob {
+      h3.text-xl {
+        margin: 30px;
+      }
+    }
+}
 .card-v8 {
   display: block;
   overflow: hidden;
