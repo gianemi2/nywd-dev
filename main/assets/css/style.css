@@ -15810,6 +15810,7 @@ Usage: codyhouse.co/license
   border: none;
   position: absolute;
   left: 0;
+  background-color: transparent;
 }
 .f-header__mobile-content .f-header__logo {
   left: 0px;
