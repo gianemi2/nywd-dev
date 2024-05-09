@@ -1,0 +1,117 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_card-v9
+Title: Card v9
+Descr: Container of information used as teaser for further content exploration
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.wholesale{
+	h3.text-xl{
+		margin-bottom: 20px;
+	}
+}
+.card-v9 {
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--color-contrast-lower);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: .3s;
+  height: 320px;
+  @include breakpoint(md) {
+	  height: 470px;
+  }
+  @include breakpoint(xl) {
+		height: 520px;
+	}
+  &:hover {
+	box-shadow: var(--shadow-md);
+  }
+}
+
+.card-v9__content {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+  z-index: 2;
+  align-items: end;
+  justify-content: center;
+  h3{
+	  color: #fff;
+	  font-weight: 400;
+	  text-align: center;
+	  font-size: 42px;
+  }
+}
+
+.card-v9__btn {
+  position: absolute;
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  top: 50%;
+  @include fontSmooth;
+
+  i { // button label
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	opacity: 0;
+	transition: opacity .3s;
+  }
+
+  &::after { // button background
+	content: '';
+	position: absolute;
+	border: 1px solid #fff;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: alpha(var(--color-contrast-higher), 0.8);
+	opacity: 0;
+	transform: translateY(25%);
+	transition: opacity .3s, transform .3s var(--ease-out);
+  }
+}
+
+.card-v9:hover {
+  .card-v9__btn {
+	i {
+	  opacity: 1;
+	}
+
+	&::after {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+}
+
+// --overlay-bg
+.card-v9--overlay-bg {
+  &::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsl(0deg 0% 0% / 0%);
+	transition: background-color .3s;
+  }
+
+  &:hover::before {
+	background-color: hsl(0deg 0% 0% / 48%);
+  }
+}

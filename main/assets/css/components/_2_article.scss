@@ -1,0 +1,28 @@
+@use '../base' as *;
+
+/* --------------------------------
+
+File#: _2_article
+Title: Article
+Descr: Article template
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.article-post{
+	p{
+		font-size: 16px;
+		b{font-weight: 600;}
+	}
+	.box-post-img-text{
+		.grid{
+			align-items: center;
+		}
+		h3{
+			font-weight: 400;
+		}
+	}
+	.box-background{
+		background-color: rgba(214, 209, 203, 0.5);
+	}
+}

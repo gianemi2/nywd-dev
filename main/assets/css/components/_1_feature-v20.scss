@@ -1,0 +1,41 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_feature-v20
+Title: Feature v20
+Descr: A list of features with icons
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.service-section{
+	text-align: center;
+	.text-int{
+		font-size: 16px;
+	}
+	
+	.item-service{
+		figure{
+			height: 90px;
+			width: 56px;
+			&.figure-big{
+				height: 90px;
+				width: 90px;
+			}
+			svg{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		h4{
+			font-family: var(--font-secondary);
+			font-size: 16px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 1.5em;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_back-to-top
+Title: Back to top
+Descr: Component that triggers scroll-y to the top of the page
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.content-back-top{
+	
+	justify-content: flex-end;
+	display: flex;
+}
+.back-to-top {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  position: relative;
+  right: 0;
+  bottom: var(--space-xs);
+  z-index: var(--z-index-fixed-element, 10); 
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: .2s;
+  
+  &:hover {
+	background-color: var(--color-contrast-higher);
+	.icon {
+		color: #fff;
+	  }
+  }
+
+  .icon {
+	--size: 17px;
+	display: block;
+	margin: auto;
+	color: #333333;
+  }
+}
+
+.back-to-top--is-visible { // show button
+  visibility: visible;
+  opacity: 1;
+}

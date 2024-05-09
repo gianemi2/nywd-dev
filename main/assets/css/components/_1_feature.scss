@@ -1,0 +1,292 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_feature
+Title: Feature
+Descr: Content group containing text + media (img, video, iframe, inline SVG)
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.main-date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	height: 320px;
+	&:after{
+		content: "";
+		width: 100%;
+		height: 70px;
+		position: absolute;
+		background-color: rgba(235, 232, 228, 0.5);
+	}
+	&.v1:after{
+		border-radius:30px 30px 0px 0px;
+		bottom: 0;
+	}
+	&.v2:after{
+		border-radius:0px 0px 30px 30px;
+		top: 0;
+	}
+	&.v3:after{
+		border-radius:30px 30px 0px 0px;
+		bottom: 0;
+		height: 50px;
+	}
+	&.v4:after{
+		border-radius:0px 0px 30px 30px;
+		top: 0;
+		height: 180px;
+	}
+	.info-date-item{
+		position: relative;
+		z-index: 1;
+		h3{
+			font-size: 3em;
+			margin-bottom: 10px;
+		}
+		p{font-size: 0.8em;}
+	}
+	
+}
+.section-img-text{
+	ul{
+		margin-bottom: 10px;
+		li{
+			margin-bottom: 10px;
+		}
+	}
+	.btn--primary{margin-top: 20px;}
+}
+
+section.wholesale {
+	margin-bottom: 40px;
+}
+
+.whol-fig{
+	position: relative;
+	figcaption {
+		position: absolute;
+		z-index: 3;
+		display: block;
+		bottom: 20px;
+		text-align: center;
+		color: #fff;
+		font-family: var(--font-primary);
+		font-size: 2.4em;
+		width: 100%;
+	}
+}
+.title-whos{
+	display: none;
+}
+
+
+.whosale-section{
+	margin-top: 174px;
+	.main-text{
+		padding: 0 20px 30px;
+		text-align: center;
+		p{
+			font-size: 16px;
+		}
+		ul{
+			li{font-size: 16px;}
+			
+		}
+		@include breakpoint(md) {
+			text-align: left;
+		}
+		@include breakpoint(xl) {
+			max-width: 80%;
+		}
+		.main-btn{
+			justify-content: center;
+			@include breakpoint(md) {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+.policy-main{
+	h3{
+		margin-bottom: 20px;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+
+.why-section{
+	.title-why{
+		
+	}
+	ul li{
+		font-size: 16px;
+		margin-bottom: 30px;
+		h4{
+			font-family: var(--font-secondary);
+			font-size: 16px;
+		}
+	}
+}
+.our-company{
+	.our-mission-text {
+		padding: 3% 12% 3% 4%;
+		background-color: #dce3e6;
+		height: 650px;
+	}
+	figure.figure-mission {
+		width: 120%;
+		position: relative;
+		left: -120px;
+		top: 40px;
+		height: 571px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.our-mission{
+	.our-mission-text{
+		padding: 3% 12% 3% 4%;
+		background-color: #dce3e6;
+		height: 650px;
+		h3{
+			margin-bottom: 30px;
+		}
+		p{
+			font-size: 18px;
+			line-height: 1.4em;
+		}
+	}
+	.figure-mission{
+		width: 120%;
+		position: relative;
+		left: -20%;
+		top: 40px;
+		height:571px;
+		img{
+			width:100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.social-responsability{
+	p{
+		font-size: 18px;
+		line-height: 1.6em;
+	}
+}
+.intro-why-us{
+	p{
+		font-size: 18px;
+		line-height: 1.6em;
+	}
+}
+.content-why-us{
+	.grid{
+		align-items: center;
+		p{
+			line-height: 1.4em;
+		}
+	}
+}
+.content-career {
+	.bg-career{
+		background-color: rgba(214, 209, 203, 0.5);
+		min-height: 540px; 
+		h4{
+			font-size: 18px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #111;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+}
+.our-team{
+	.item-team {
+		height: 450px;
+		position: relative;
+		.img-team {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			height: 100%;
+			 img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.role {
+			position: absolute;
+			bottom: 75px;
+			left: 30px;
+			color: #fff;
+			font-family: var(--font-secondary);
+			font-weight: 400;
+			font-size: 16px;
+		}
+		.name {
+			position: absolute;
+			bottom: 25px;
+			left: 30px;
+			color: #fff;
+			font-family: var(--font-secondary);
+			font-size: 36px;
+		}
+		 p {
+			text-align: left;
+			padding: 5%;
+			font-size: 1.2rem;
+			line-height: 1.3em;
+			position: absolute;
+			background-color: rgba(164, 179, 185, 0.9);
+			width: 100%;
+			height: 100%;
+			top: 100%;
+			display: flex;
+			align-items: center;
+			transition: all 0.4s;
+		}
+		&:hover p{
+			top:0;
+		}
+	}
+	
+}
+
+
+
+
+@include breakpoint(md) {
+	.whosale-section{
+		margin-top: 0;
+	}
+	.whol-fig{
+
+		figcaption {
+			display: none;
+		}
+	}
+	.title-whos{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.info-date{
+		display: none;
+	}
+}
+
+

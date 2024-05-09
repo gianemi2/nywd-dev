@@ -1,0 +1,115 @@
+@use '../base' as *;
+@use '_1_radios-checkboxes.scss' as *;
+
+/* -------------------------------- 
+
+File#: _2_sign-up-form
+Title: Sign Up Form
+Descr: Sign up form template
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.hero-become{
+	.form-main{
+		.text-question{
+			font-size: 16px;
+			a{
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+.sign-up-form {
+	
+	&.form-member{
+		padding: 30px;
+		
+		@include breakpoint(md) {
+			padding: 20px;
+		}
+	}
+	
+	&.thank-main{
+		.text-component{
+			p{
+				margin-bottom: 30px;
+				font-size: 18px;
+				line-height: 1.6em;
+				@include breakpoint(md) {
+					font-size: 14px;
+				}
+				&.text-img-thank{
+					font-size: 16px;
+				}
+			}
+			img{
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+		}
+		
+	}
+	.text-component{
+		h1{
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 16px;
+		}
+		
+	}
+	#recaptcha{
+		div{
+			margin: 0 auto;
+		}
+	}
+	input{
+		background-color: #fff;
+		font-size: 14px;
+		height: 55px;
+		border: none;
+	}
+	textarea{
+		background-color: #fff;
+		font-size: 14px;
+		height: 55px;
+		border: none;
+	}
+	.footer-login{
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 100%;
+			margin: 0 auto;
+			border-top: 1px solid #ccc;
+			padding-top: 30px;
+			margin-top: 30px;
+			justify-content: start;
+			text-align: left;
+			text-transform: uppercase;
+			@include breakpoint(md) {
+				padding-top: 15px;
+				margin-top: 60px;
+				  flex-wrap: nowrap;
+				  justify-content: space-between;
+				  margin-top: 30px;
+			  }
+			li{
+				width: 100%;
+				margin-bottom: 40px;
+				text-align: center;
+				a{
+					text-decoration: none;
+					font-size: 13px;
+				}
+				@include breakpoint(md) {
+					  flex-wrap: nowrap;
+					  margin-bottom: 20px;
+				  }
+			}
+		}
+	}
+}

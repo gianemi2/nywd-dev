@@ -1,0 +1,24 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_boxed-feature
+Title: Boxed Feature
+Descr: Feature section with a "boxed" layout
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.card-horizontal{
+	h3{
+		font-size: 24px;
+		font-weight: 400;
+	}
+	p{
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.text-card-h{
+		background-color: rgba(235, 232, 228, 0.5);
+	}
+}

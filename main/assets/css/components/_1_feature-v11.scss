@@ -1,0 +1,103 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_feature-v11
+Title: Feature v11
+Descr: Feature section containing a boxed content over a background image
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.feature-v11 {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  margin-bottom: 140px;
+  @include breakpoint(md) {
+		margin-bottom: 40px;
+	}
+  &.become-intro{
+	  h2{
+		  text-align: center;
+		  @include breakpoint(md) {
+			  text-align: left;
+		  }
+	  }
+  }
+  .box-become{
+	  background-color: rgba(185, 200, 206, 0.499);
+	  padding-bottom: 60px;
+	  @include breakpoint(md) {
+			padding-bottom: 10px;
+		}
+	  p{
+		  margin-bottom: 40px;
+		  font-size: 18px;
+		  color: #2A2F33;
+		  &.text-firma{
+			  b{font-weight:700; }
+		  }
+	  }
+	  
+  }
+  .grid{align-items: center;}
+  .figure-become{
+	  @include breakpoint(md) {
+		  width: 260px;
+		  bottom: -110px;
+		  right: 80px;
+		  height: auto;
+	  }
+		width: 261px;
+		bottom: -162px;
+		right: 46px;
+		height: 260px;
+	}
+}
+
+.feature-v11__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: alpha(var(--color-contrast-higher), 0.1);
+  color: var(--color-contrast-higher);
+  text-decoration: none;
+  line-height: 1;
+  transition: 0.3s;
+
+  &:hover {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+
+	.feature-v11__link-icon {
+	  > * {
+		transition: transform 0.3s var(--ease-out);
+	  }
+
+	  > *:first-child {
+		transform: rotate(-180deg);
+	  }
+
+	  > *:last-child {
+		transform: rotate(180deg);
+	  }
+	}
+  }
+}
+
+.feature-v11__link-icon { /* animated arrow */
+  --size: 16px;
+
+  > * {
+	will-change: transform;
+  }
+
+  > *:first-child {
+	transform-origin: 8px 5px;
+  }
+
+  > *:last-child {
+	transform-origin: 8px 11px;
+  }
+}

@@ -1,0 +1,191 @@
+/* -------------------------------- 
+
+File#: _2_carousel
+Title: Carousel
+Descr: Display and cycle through a collection of items
+Usage: codyhouse.co/license
+
+-------------------------------- */
+:root {
+  --carousel-grid-gap: var(--space-xs);
+  --carousel-item-auto-size: 260px;
+  --carousel-transition-duration: 0.5s;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__list {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.carousel__item {
+  flex-shrink: 0;
+  width: var(--carousel-item-auto-size);
+  margin-right: var(--carousel-grid-gap);
+  margin-bottom: var(--carousel-grid-gap);
+  
+  .card-v8{
+	  h4{font-weight: 400;}
+	  footer {
+	  background-color: rgba(235, 232, 228, 0.5);
+	  padding: 30px 36px 0px;
+	  min-height: 420px;
+  	}
+  }
+}
+
+.carousel__list--animating {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: var(--carousel-transition-duration);
+  transition-timing-function: var(--ease-out);
+}
+
+.carousel__item {
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.carousel--loaded .carousel__item {
+  opacity: 1;
+}
+
+.carousel:not(.carousel--is-dragging) .carousel__list:not(.carousel__list--animating) .carousel__item[tabindex="-1"] > * {
+  visibility: hidden;
+}
+.arrow-nav{
+	position: relative;
+	top: -42px;
+	z-index: 3;
+	ul{
+		position: relative;
+		
+	}
+	
+}
+
+.carousel[data-drag=on] .carousel__item {
+  -webkit-user-select: none;
+	 -moz-user-select: none;
+	  -ms-user-select: none;
+		  user-select: none;
+}
+.carousel[data-drag=on] .carousel__item img {
+  pointer-events: none;
+}
+
+.carousel__control {
+  --size: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  z-index: 1;
+  transition: 0.2s;
+  background-color: #2A2F33;
+  color: #fff;
+}
+.carousel__control:active {
+  -webkit-transform: translateY(1px);
+		  transform: translateY(1px);
+}
+.carousel__control:hover {
+  opacity: 0.6;
+}
+.carousel__control[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+  box-shadow: none;
+}
+.carousel__control .icon {
+  --size: 20px;
+  display: block;
+  margin: auto;
+}
+
+.carousel__navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10px);
+  gap: var(--space-xs);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-sm);
+  position: relative;
+  top: -83px;
+  z-index: 1;
+}
+
+.carousel__nav-item {
+  display: inline-block;
+  margin: 0 var(--space-xxxs);
+}
+@supports (grid-area: auto) {
+  .carousel__nav-item {
+	margin: 0;
+  }
+}
+.carousel__nav-item button {
+  display: block;
+  position: relative;
+  font-size: 10px;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background-color: var(--color-contrast-high);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel__nav-item button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: calc(50% - 0.5em);
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+  border-radius: inherit;
+  border: 1px solid var(--color-contrast-high);
+  opacity: 0;
+  -webkit-transform: scale(0);
+		  transform: scale(0);
+  transition: 3s;
+}
+.carousel__nav-item button:focus {
+  outline: none;
+}
+.carousel__nav-item button:focus::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+		  transform: scale(1);
+}
+
+.carousel__nav-item--selected button {
+  opacity: 1;
+}
+
+.carousel__navigation--pagination {
+  grid-template-columns: repeat(auto-fit, 24px);
+}
+.carousel__navigation--pagination .carousel__nav-item button {
+  width: 24px;
+  height: 24px;
+  color: var(--color-bg);
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.carousel__navigation--pagination .carousel__nav-item button:focus {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.carousel--hide-controls .carousel__navigation, .carousel--hide-controls .carousel__control {
+  display: none;
+}

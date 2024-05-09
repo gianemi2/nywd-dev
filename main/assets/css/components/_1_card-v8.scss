@@ -1,0 +1,65 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_card-v8
+Title: Card v8
+Descr: Container of information used as teaser for further content exploration
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.why-chose{
+  display: none;
+}
+.why-chose-mob{
+  h3.text-xl{
+   margin: 30px auto 30px;
+  }
+}
+.card-v8 {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .2s;
+
+  img {
+	display: block;
+	width: 100%;
+  }
+
+  footer{
+    background-color: rgba(235, 232, 228, 0.5);
+    min-height: 260px;
+  }
+  &.c-sun{
+    footer{
+      background-color: rgba(235, 232, 228, 0.5);
+      min-height: 360px;
+    }
+  }
+}
+
+.card-v8__title {
+  background-repeat: no-repeat;
+  will-change: background-size;
+  transition: background-size .3s var(--ease-in-out);
+  text-decoration: none;
+  background-image: linear-gradient(transparent 50%, alpha(var(--color-primary), 0.2) 50%);
+  background-size: 0% 100%;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.text-card-v8{
+  margin-top: 20px;
+  line-height: 1.4em;
+  color: #2A2F33;
+}
+@include breakpoint(md) {
+  .why-chose{
+    display: block;
+  }
+  .why-chose-mob{
+    display: none;
+  }
+}
