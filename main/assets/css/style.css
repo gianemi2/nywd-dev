@@ -16231,7 +16231,12 @@ Usage: codyhouse.co/license
   margin-bottom: 20px;
 }
 .sign-up-form .text-component p {
-  font-size: 16px;
+  font-size: 18px;
+}
+@media (min-width: 64rem) {
+  .sign-up-form .text-component p {
+    font-size: 16px;
+  }
 }
 .sign-up-form #recaptcha div {
   margin: 0 auto;
@@ -16272,11 +16277,21 @@ Usage: codyhouse.co/license
 .sign-up-form .footer-login ul li {
   width: 100%;
   margin-bottom: 40px;
-  text-align: center;
+  text-align: left;
+}
+@media (min-width: 64rem) {
+  .sign-up-form .footer-login ul li {
+    text-align: center;
+  }
 }
 .sign-up-form .footer-login ul li a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
+}
+@media (min-width: 64rem) {
+  .sign-up-form .footer-login ul li a {
+    font-size: 13px;
+  }
 }
 @media (min-width: 64rem) {
   .sign-up-form .footer-login ul li {

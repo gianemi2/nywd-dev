@@ -27,3 +27,6 @@ Temporary Items
 
 # Dependencies
 node_modules
+
+# Build
+dist
