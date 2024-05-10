@@ -35,14 +35,22 @@ Usage: codyhouse.co/license
 	&.thank-main{
 		.text-component{
 			p{
-				margin-bottom: 30px;
+				margin-bottom: 15px;
 				font-size: 18px;
 				line-height: 1.6em;
+
+				&.text-img-thank{
+					margin-bottom: 30px;
+				}
 				@include breakpoint(md) {
 					font-size: 14px;
+					margin-bottom: 30px;
 				}
 				&.text-img-thank{
-					font-size: 16px;
+					font-size: 20px;
+					@include breakpoint(md) {
+						font-size: 16px;
+					}
 				}
 			}
 			img{

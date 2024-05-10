@@ -16211,17 +16211,26 @@ Usage: codyhouse.co/license
   }
 }
 .sign-up-form.thank-main .text-component p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.6em;
+}
+.sign-up-form.thank-main .text-component p.text-img-thank {
+  margin-bottom: 30px;
 }
 @media (min-width: 64rem) {
   .sign-up-form.thank-main .text-component p {
     font-size: 14px;
+    margin-bottom: 30px;
   }
 }
 .sign-up-form.thank-main .text-component p.text-img-thank {
-  font-size: 16px;
+  font-size: 20px;
+}
+@media (min-width: 64rem) {
+  .sign-up-form.thank-main .text-component p.text-img-thank {
+    font-size: 16px;
+  }
 }
 .sign-up-form.thank-main .text-component img {
   display: inline-block;
