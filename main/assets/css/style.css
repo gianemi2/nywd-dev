@@ -14171,6 +14171,15 @@ Usage: codyhouse.co/license
     font-weight: 500;
   }
 }
+.hero.hero-faq {
+  background-image: url("/assets/img/banner-faq-mob.jpg") !important;
+}
+@media (min-width: 64rem) {
+  .hero.hero-faq {
+    background-image: url("/assets/img/banner-faq.jpg") !important;
+  }
+}
+
 /* -------------------------------- 
 
 File#: _1_language-picker

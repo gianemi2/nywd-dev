@@ -182,10 +182,7 @@ p{
   }
   .hero-home{
 	  h1.mob{display:none;}
-  }
-  
-
-  
+  } 
 }
 @include breakpoint(md) {
 	.hero-home{
@@ -254,5 +251,12 @@ p{
 	.hero.banner-home-charriol .main-charriol .main-charriol-text h3 {
 		font-size: 25px;
 		font-weight: 500;
+	}
+}
+.hero.hero-faq{
+	background-image: url('/assets/img/banner-faq-mob.jpg')!important;
+
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-faq.jpg')!important;
 	}
 }
