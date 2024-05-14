@@ -13106,6 +13106,23 @@ Usage: codyhouse.co/license
   font-size: 14px;
 }
 
+@media (max-width: 500px) {
+  .blog .figure-post-big {
+    --aspect-ratio: calc(4/3);
+    position: relative;
+    height: 0;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+  .blog .figure-post-big img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .story__img {
   display: block;
   transition: opacity 0.2s;
@@ -13817,9 +13834,14 @@ section.wholesale {
 }
 
 .our-mission .our-mission-text {
-  padding: 3% 12% 3% 4%;
   background-color: #dce3e6;
-  height: 650px;
+  min-height: 650px;
+  padding: 25px 15px;
+}
+@media (min-width: 64rem) {
+  .our-mission .our-mission-text {
+    padding: 3% 12% 3% 4%;
+  }
 }
 .our-mission .our-mission-text h3 {
   margin-bottom: 30px;
@@ -13828,12 +13850,14 @@ section.wholesale {
   font-size: 18px;
   line-height: 1.4em;
 }
-.our-mission .figure-mission {
-  width: 120%;
-  position: relative;
-  left: -20%;
-  top: 40px;
-  height: 571px;
+@media (min-width: 64rem) {
+  .our-mission .figure-mission {
+    width: 120%;
+    position: relative;
+    left: -20%;
+    top: 40px;
+    height: 571px;
+  }
 }
 .our-mission .figure-mission img {
   width: 100%;
@@ -13846,10 +13870,28 @@ section.wholesale {
   font-size: 18px;
   line-height: 1.6em;
 }
+.social-responsability figure {
+  margin: calc(-1 * var(--space-lg));
+  margin-top: var(--space-lg);
+}
+@media (min-width: 64rem) {
+  .social-responsability {
+    margin: 0;
+  }
+}
 
 .intro-why-us p {
   font-size: 18px;
   line-height: 1.6em;
+}
+
+.hero.banner-why {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .hero.banner-why {
+    display: flex;
+  }
 }
 
 .content-why-us .grid {
@@ -13870,6 +13912,17 @@ section.wholesale {
 }
 .content-career .bg-career p {
   font-size: 16px;
+}
+.content-career .bg-career .btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  .content-career .bg-career .btn {
+    display: inline-flex;
+    width: auto;
+  }
 }
 
 .our-team .item-team {
@@ -13915,9 +13968,14 @@ section.wholesale {
   width: 100%;
   height: 100%;
   top: 100%;
-  display: flex;
   align-items: center;
   transition: all 0.4s;
+  display: none;
+}
+@media (min-width: 64rem) {
+  .our-team .item-team p {
+    display: flex;
+  }
 }
 .our-team .item-team:hover p {
   top: 0;
@@ -14180,25 +14238,78 @@ Usage: codyhouse.co/license
   }
 }
 
-.hero.hero-sunglasses--wholesale {
-  background-image: url("/assets/img/banner-sunglasses-wholesale-mobile.jpg");
-  height: 350px;
+.hero.hero--mobile-banner {
+  height: 380px;
   padding-bottom: 0;
   margin-bottom: 20px;
+  align-items: flex-end;
 }
-.hero.hero-sunglasses--wholesale .main-text-hero {
+.hero.hero--mobile-banner .main-text-hero {
   text-align: center;
 }
-.hero.hero-sunglasses--wholesale .main-text-hero > * {
+.hero.hero--mobile-banner .main-text-hero > * {
   text-align: inherit;
+}
+@media (min-width: 64rem) {
+  .hero.hero--mobile-banner {
+    padding-bottom: var(--space-xxl);
+    align-items: center;
+  }
+  .hero.hero--mobile-banner .main-text-hero {
+    text-align: left;
+  }
+}
+
+.hero.hero-sunglasses--wholesale {
+  background-image: url("/assets/img/banner-sunglasses-wholesale-mobile.jpg");
 }
 @media (min-width: 64rem) {
   .hero.hero-sunglasses--wholesale {
     background-image: url("/assets/img/banner-Sunglasses-Wholesale.jpg");
-    padding-bottom: var(--space-xxl);
   }
-  .hero.hero-sunglasses--wholesale .main-text-hero {
-    text-align: left;
+}
+
+.hero.hero--about {
+  background-image: url("/assets/img/banner-about-mobile.jpg");
+}
+@media (min-width: 64rem) {
+  .hero.hero--about {
+    background-image: url("/assets/img/banner-about.jpg");
+  }
+}
+
+.hero.hero-ready-to-say-goodbye {
+  background-color: #eaeef0;
+}
+@media (min-width: 64rem) {
+  .hero.hero-ready-to-say-goodbye {
+    background-image: url("/assets/img/banner-about-company.jpg");
+  }
+}
+.hero.hero-ready-to-say-goodbye p, .hero.hero-ready-to-say-goodbye h3 {
+  color: var(--color-contrast-higher);
+}
+@media (min-width: 64rem) {
+  .hero.hero-ready-to-say-goodbye p, .hero.hero-ready-to-say-goodbye h3 {
+    color: var(--color-white);
+  }
+}
+
+.hero.hero-why-us {
+  background-image: url("/assets/img/banner-why-us-mobile.jpg");
+}
+@media (min-width: 64rem) {
+  .hero.hero-why-us {
+    background-image: url("/assets/img/banner-why-us.jpg");
+  }
+}
+
+.hero.hero-career {
+  background-image: url("/assets/img/career-banner-mobile.jpg");
+}
+@media (min-width: 64rem) {
+  .hero.hero-career {
+    background-image: url("/assets/img/career-banner.jpg");
   }
 }
 

@@ -261,11 +261,11 @@ p{
 	}
 }
 
-.hero.hero-sunglasses--wholesale{
-	background-image: url('/assets/img/banner-sunglasses-wholesale-mobile.jpg');
-	height: 350px;
+.hero.hero--mobile-banner{
+	height: 380px;
   	padding-bottom: 0;
 	margin-bottom: 20px;
+	align-items: flex-end;
 
 	.main-text-hero{
 		text-align: center;
@@ -276,11 +276,56 @@ p{
 	}
 
 	@include breakpoint(md) {
-		background-image: url('/assets/img/banner-Sunglasses-Wholesale.jpg');
 		padding-bottom: var(--space-xxl);
+		align-items: center;
 
 		.main-text-hero{
 			text-align: left;
 		}
+	}
+}
+
+.hero.hero-sunglasses--wholesale{
+	background-image: url('/assets/img/banner-sunglasses-wholesale-mobile.jpg');
+	
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-Sunglasses-Wholesale.jpg');
+	}
+}
+
+.hero.hero--about{
+	background-image: url('/assets/img/banner-about-mobile.jpg');
+
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-about.jpg');
+	}
+}
+
+.hero.hero-ready-to-say-goodbye{
+	background-color: #eaeef0;
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-about-company.jpg');
+	}
+
+	p, h3{
+		color: var(--color-contrast-higher);
+		@include breakpoint(md) {
+			color: var(--color-white);
+		}
+	}
+
+}
+
+.hero.hero-why-us{
+	background-image: url('/assets/img/banner-why-us-mobile.jpg');
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-why-us.jpg');
+	}
+}
+
+.hero.hero-career{
+	background-image: url('/assets/img/career-banner-mobile.jpg');
+	@include breakpoint(md) {
+		background-image: url('/assets/img/career-banner.jpg');
 	}
 }

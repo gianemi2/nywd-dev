@@ -154,9 +154,13 @@ section.wholesale {
 }
 .our-mission{
 	.our-mission-text{
-		padding: 3% 12% 3% 4%;
 		background-color: #dce3e6;
-		height: 650px;
+		min-height: 650px;
+		padding: 25px 15px;
+
+		@include breakpoint(md) {
+			padding: 3% 12% 3% 4%;
+		}
 		h3{
 			margin-bottom: 30px;
 		}
@@ -166,11 +170,14 @@ section.wholesale {
 		}
 	}
 	.figure-mission{
-		width: 120%;
-		position: relative;
-		left: -20%;
-		top: 40px;
-		height:571px;
+
+		@include breakpoint(md) {
+			width: 120%;
+			position: relative;
+			left: -20%;
+			top: 40px;
+			height: 571px;
+		}
 		img{
 			width:100%;
 			height: 100%;
@@ -183,11 +190,26 @@ section.wholesale {
 		font-size: 18px;
 		line-height: 1.6em;
 	}
+
+	figure{
+		margin: calc(-1 * var(--space-lg));
+		margin-top: var(--space-lg);
+	}
+
+	@include breakpoint(md){
+		margin: 0;
+	}
 }
 .intro-why-us{
 	p{
 		font-size: 18px;
 		line-height: 1.6em;
+	}
+}
+.hero.banner-why{
+	display: none;
+	@include breakpoint(md) {
+		display: flex;
 	}
 }
 .content-why-us{
@@ -209,6 +231,16 @@ section.wholesale {
 		}
 		p{
 			font-size: 16px;
+		}
+		.btn{
+			display: block;
+			width: 100%;
+			text-align: center;
+
+			@include breakpoint(md) {
+				display: inline-flex;
+				width: auto;
+			}
 		}
 	}
 }
@@ -254,9 +286,13 @@ section.wholesale {
 			width: 100%;
 			height: 100%;
 			top: 100%;
-			display: flex;
 			align-items: center;
 			transition: all 0.4s;
+			display: none;
+
+			@include breakpoint(md) {
+				display: flex;
+			}
 		}
 		&:hover p{
 			top:0;
