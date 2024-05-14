@@ -13840,7 +13840,8 @@ section.wholesale {
 }
 @media (min-width: 64rem) {
   .our-mission .our-mission-text {
-    padding: 3% 12% 3% 4%;
+    padding: 6% 12% 3% 4%;
+    min-height: auto;
   }
 }
 .our-mission .our-mission-text h3 {

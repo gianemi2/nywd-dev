@@ -159,7 +159,8 @@ section.wholesale {
 		padding: 25px 15px;
 
 		@include breakpoint(md) {
-			padding: 3% 12% 3% 4%;
+			padding: 6% 12% 3% 4%;
+			min-height: auto;
 		}
 		h3{
 			margin-bottom: 30px;
