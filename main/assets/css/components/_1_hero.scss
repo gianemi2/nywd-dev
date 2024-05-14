@@ -260,3 +260,27 @@ p{
 		background-image: url('/assets/img/banner-faq.jpg')!important;
 	}
 }
+
+.hero.hero-sunglasses--wholesale{
+	background-image: url('/assets/img/banner-sunglasses-wholesale-mobile.jpg');
+	height: 350px;
+  	padding-bottom: 0;
+	margin-bottom: 20px;
+
+	.main-text-hero{
+		text-align: center;
+
+		> *{
+			text-align: inherit;
+		}
+	}
+
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-Sunglasses-Wholesale.jpg');
+		padding-bottom: var(--space-xxl);
+
+		.main-text-hero{
+			text-align: left;
+		}
+	}
+}

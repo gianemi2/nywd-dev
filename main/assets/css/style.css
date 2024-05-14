@@ -14180,6 +14180,28 @@ Usage: codyhouse.co/license
   }
 }
 
+.hero.hero-sunglasses--wholesale {
+  background-image: url("/assets/img/banner-sunglasses-wholesale-mobile.jpg");
+  height: 350px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.hero.hero-sunglasses--wholesale .main-text-hero {
+  text-align: center;
+}
+.hero.hero-sunglasses--wholesale .main-text-hero > * {
+  text-align: inherit;
+}
+@media (min-width: 64rem) {
+  .hero.hero-sunglasses--wholesale {
+    background-image: url("/assets/img/banner-Sunglasses-Wholesale.jpg");
+    padding-bottom: var(--space-xxl);
+  }
+  .hero.hero-sunglasses--wholesale .main-text-hero {
+    text-align: left;
+  }
+}
+
 /* -------------------------------- 
 
 File#: _1_language-picker
