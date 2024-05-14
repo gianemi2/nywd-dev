@@ -329,3 +329,11 @@ p{
 		background-image: url('/assets/img/career-banner.jpg');
 	}
 }
+
+.hero.hero-glasses-frames{
+	background-image: url('/assets/img/banner-glasses-frames-mobile.jpg');
+
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-glasses-frames.jpg');
+	}
+}
