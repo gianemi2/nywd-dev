@@ -68,19 +68,6 @@ gulp.task('browserSync', gulp.series(function (done) {
   })
   done();
 }));
-/* 
-async function includeHTML() {
-  return gulp.src([
-    'main/*.html',
-    '!header.html', // ignore
-    '!footer.html' // ignore
-  ])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest(distFolder))
-}; */
 
 function includeHTML() {
   return new Promise(function (resolve, reject) {
@@ -109,10 +96,11 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   await moveJS();
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
-  gulp.watch('main/*.html', gulp.series([moveContent, includeHTML, reload]));/* 
-  // copy all html files inside main folder to the dist folder 
-  await moveContent();
-  await includeHTML(); */
+  gulp.watch('main/*.html', gulp.series([
+    moveContent,
+    includeHTML,
+    reload
+  ]));
 }));
 
 
@@ -131,8 +119,8 @@ gulp.task('dist', async function () {
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
   // copy all html files inside main folder to the dist folder 
-  await includeHTML();
   await moveContent();
+  await includeHTML();
   console.log('Distribution task completed!')
 });
 
