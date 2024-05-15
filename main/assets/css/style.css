@@ -14323,6 +14323,15 @@ Usage: codyhouse.co/license
   }
 }
 
+.hero.hero-blog {
+  background-image: url("/assets/img/banner-blog-mobile.jpg");
+}
+@media (min-width: 64rem) {
+  .hero.hero-blog {
+    background-image: url("/assets/img/banner-blog.jpg");
+  }
+}
+
 /* -------------------------------- 
 
 File#: _1_language-picker
@@ -16056,6 +16065,10 @@ Usage: codyhouse.co/license
   z-index: 1001;
   width: 0;
 }
+.f-header__link.f-header__active:before {
+  right: 0;
+  width: 75%;
+}
 .f-header__link:hover:before {
   right: 0;
   width: 75%;
@@ -16300,6 +16313,10 @@ Usage: codyhouse.co/license
   transition: background-size 0.3s var(--ease-in-out), color 0.3s;
   text-transform: uppercase;
   font-size: 1.3em;
+}
+.offnav__link.f-header__active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
 }
 .offnav__link:hover, .offnav__link[aria-current=page], .offnav__link.offnav__link--current {
   color: #fff;

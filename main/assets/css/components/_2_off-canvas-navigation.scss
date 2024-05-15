@@ -83,6 +83,10 @@ Usage: codyhouse.co/license
   transition: background-size .3s var(--ease-in-out), color .3s;
   text-transform: uppercase;
   font-size: 1.3em;
+  &.f-header__active{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+  }
   &:hover, &[aria-current="page"], &.offnav__link--current {
 	color: #fff;
   }

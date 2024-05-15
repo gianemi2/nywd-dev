@@ -145,6 +145,12 @@ Usage: codyhouse.co/license
         width: 0;
         
     }
+    &.f-header__active{
+      &:before{
+        right: 0;
+        width: 75%;
+      }
+    }
     &:hover{
       &:before{
         right: 0;

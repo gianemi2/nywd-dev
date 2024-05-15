@@ -337,3 +337,11 @@ p{
 		background-image: url('/assets/img/banner-glasses-frames.jpg');
 	}
 }
+
+.hero.hero-blog{
+	background-image: url('/assets/img/banner-blog-mobile.jpg');
+
+	@include breakpoint(md) {
+		background-image: url('/assets/img/banner-blog.jpg');
+	}
+}
