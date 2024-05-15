@@ -55,61 +55,7 @@
 
         </div>
       </div><!-- /TOP BAR -->
-      <!-- HEADER -->
-      <header class="f-header js-f-header bg hide-nav js-hide-nav js-hide-nav--main"
-        data-nav-target-class="f-header--expanded">
-        <div class="f-header__mobile-content container max-width-lg">
-          <select name="language-picker-select" id="language-picker-select">
-            <option lang="en" value="english" selected>EN</option>
-            <option lang="fr" value="francais">ES</option>
-          </select>
-          <a href="index.html" width="104" class="f-header__logo">
-            <img src="./assets/img/logo-black.svg" alt="NYWD | Global B2B Designer Eyewear Distributor" />
-          </a>
-          <button class="reset anim-menu-btn offnav-control js-anim-menu-btn js-tab-focus"
-            aria-label="Toggle navigation" aria-controls="off-canvas-navigation">
-
-            <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <div class="f-header__nav" role="navigation">
-          <div class="f-header__nav-grid justify-between@md container">
-            <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
-              <a href="index.html" width="104" class="f-header__logo">
-                <img src="./assets/img/logo-black.svg" alt="NYWD | Global B2B Designer Eyewear Distributor" />
-              </a>
-            </div>
-
-            <ul class="f-header__list flex-grow flex-basis-0  justify-center@md">
-              <li class="f-header__item"><a href="about.html" class="f-header__link">About</a></li>
-              <li class="f-header__item"><a href="why-us.html" class="f-header__link">Why Us</a></li>
-              <li class="f-header__item"><a href="career.html" class="f-header__link">Career</a></li>
-              <li class="f-header__item"><a href="faq.html" class="f-header__link">Faq</a></li>
-              <li class="f-header__item"><a href="blog.html" class="f-header__link">Blog</a></li>
-            </ul>
-
-            <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
-              <li class="f-header__item">
-                <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus ">
-                  <form action="" class="language-picker__form">
-                    <label for="language-picker-select">Select your language</label>
-
-                    <select name="language-picker-select" id="language-picker-select">
-                      <option lang="en" value="english" selected>EN</option>
-                      <option lang="fr" value="francais">ES</option>
-                    </select>
-                  </form>
-                </div>
-              </li>
-              <li class="f-header__item login-h"><a href="login.html" class="f-header__link"><img
-                    src="./assets/img/user-icon.svg" /> LOGIN</a></li>
-              <li class="f-header__item"><a href="become-a-member.html"
-                  class="f-header__btn btn btn--primary btn--icon"> REGISTER NOW</a></li>
-            </ul>
-          </div>
-        </div>
-      </header> <!-- /HEADER -->
+      @@include('header.html')
 
       <!--BANNER-->
       <section class="hero hero-first hero-home hero-black padding-y-xxl hero--mobile-banner"
