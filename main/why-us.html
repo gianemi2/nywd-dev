@@ -279,48 +279,7 @@
 
     </main><!-- /MAIN -->
 
-    <div id="off-canvas-navigation" class="off-canvas__panel js-off-canvas__panel" role="complementary">
-      <div class="off-canvas__content">
-        <div class="container max-width-sm padding-y-lg padding-bottom-0@md">
-          <div class="offnav height-100% flex flex-column text-center text-left@md">
-            <nav class="margin-bottom-lg" role="navigation" aria-label="Main">
-              <ul class="grid gap-lg">
-                <li class="logo-menu-mob">
-                  <img src="assets/img/nywd-brand-menu.svg" alt="logo" />
-                </li>
-                <li><a class="offnav__link text-xxl" href="about.html">About</a></li>
-                <li><a class="offnav__link text-xxl f-header__active" href="why-us.html">Why us</a></li>
-                <li><a class="offnav__link text-xxl" href="career.html">Career</a></li>
-                <li><a class="offnav__link text-xxl" href="faq.html">Faq</a></li>
-                <li><a class="offnav__link text-xxl" href="blog.html">Blog</a></li>
-                <li class="login-h"><a href="login.html" class="f-header__link"><img
-                      src="./assets/img/user-icon-white.svg" /> LOGIN</a></li>
-                <li><a href="#0" class="btn btn--primary btn-border btn--icon"> REGISTER NOW</a></li>
-              </ul>a href="#0" class="btn btn--primary btn-border btn--icon"> REGISTER NOW</a></li>
-              </ul>
-            </nav>
-
-
-            <button class="reset offnav__a11y-close-btn js-off-canvas__close-btn js-off-canvas__a11y-close-btn">
-              <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="PLUS-faqs" transform="translate(-9.000000, -9.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <path
-                      d="M18.5,31 C18.2032004,31 17.9625967,30.7593705 17.9625967,30.462539 L17.9625967,19.0361174 L6.53740327,19.0361174 C6.24060364,19.0361174 6,18.7954879 6,18.4986563 C6,18.2018248 6.24060364,17.9611953 6.53740327,17.9611953 L17.9625967,17.9611953 L17.9625967,6.53746103 C17.9625967,6.2406295 18.2032004,6 18.5,6 C18.7967996,6 19.0374033,6.2406295 19.0374033,6.53746103 L19.0374033,17.9611953 L30.4625967,17.9611953 C30.7593964,17.9611953 31,18.2018248 31,18.4986563 C31,18.7954879 30.7593964,19.0361174 30.4625967,19.0361174 L19.0374033,19.0361174 L19.0374033,30.462539 C19.0374033,30.7593705 18.7967996,31 18.5,31 Z"
-                      id="Path"
-                      transform="translate(18.500000, 18.500000) rotate(-45.000000) translate(-18.500000, -18.500000) ">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @@include('off-canvas-navigation.html', {"active": "why-us.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
