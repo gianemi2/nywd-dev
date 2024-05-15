@@ -12594,7 +12594,7 @@ h1, h2, h3, h4 {
 
 @media (min-width: 64rem) {
   p.text-base {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
   }
 }
@@ -12811,7 +12811,7 @@ Usage: codyhouse.co/license
 }
 @media (min-width: 64rem) {
   .accordion__header span {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .accordion__header .icon {
@@ -13309,11 +13309,15 @@ Usage: codyhouse.co/license
 }
 .card-v8 footer {
   background-color: rgba(235, 232, 228, 0.5);
-  min-height: 260px;
+  min-height: auto;
 }
 .card-v8.c-sun footer {
   background-color: rgba(235, 232, 228, 0.5);
-  min-height: 360px;
+  min-height: auto;
+}
+
+.related-articles .card-v8.c-sun footer {
+  min-height: auto;
 }
 
 .card-v8__title {
@@ -13488,7 +13492,7 @@ Usage: codyhouse.co/license
 }
 .feature-v11 .box-become p {
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 16px;
   color: #2A2F33;
 }
 .feature-v11 .box-become p.text-firma b {
@@ -13833,6 +13837,12 @@ section.wholesale {
      object-fit: cover;
 }
 
+@media (min-width: 64rem) {
+  .our-mission-mobile {
+    display: none;
+  }
+}
+
 .our-mission .our-mission-text {
   background-color: #dce3e6;
   min-height: 650px;
@@ -13848,7 +13858,7 @@ section.wholesale {
   margin-bottom: 30px;
 }
 .our-mission .our-mission-text p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4em;
 }
 @media (min-width: 64rem) {
@@ -13868,7 +13878,7 @@ section.wholesale {
 }
 
 .social-responsability p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6em;
 }
 .social-responsability figure {
@@ -13882,7 +13892,7 @@ section.wholesale {
 }
 
 .intro-why-us p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6em;
 }
 
@@ -13907,7 +13917,7 @@ section.wholesale {
   min-height: 540px;
 }
 .content-career .bg-career h4 {
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 10px;
   border-bottom: 1px solid #111;
 }
@@ -14199,7 +14209,7 @@ Usage: codyhouse.co/license
     top: 200px;
     background-color: #fff;
     color: var(--color-primary);
-    font-size: 18px;
+    font-size: 16px;
   }
   .hero.banner-home-charriol .main-charriol h3 {
     font-size: 28px;
@@ -16381,7 +16391,7 @@ Usage: codyhouse.co/license
 }
 .sign-up-form.thank-main .text-component p {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6em;
 }
 .sign-up-form.thank-main .text-component p.text-img-thank {
@@ -16409,7 +16419,7 @@ Usage: codyhouse.co/license
   margin-bottom: 20px;
 }
 .sign-up-form .text-component p {
-  font-size: 18px;
+  font-size: 16px;
 }
 @media (min-width: 64rem) {
   .sign-up-form .text-component p {

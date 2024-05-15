@@ -89,6 +89,7 @@ function includeHTML() {
 }
 
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async function () {
+
   await purgeCSS();
   // minify the scripts.js file and copy it to the dist folder
   await minifyJs();
@@ -96,6 +97,8 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   await moveJS();
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
+  gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass', moveAssets, reload]));
+  gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, reload]));
   gulp.watch('main/*.html', gulp.series([
     moveContent,
     includeHTML,

@@ -37,12 +37,22 @@ Usage: codyhouse.co/license
 
   footer{
     background-color: rgba(235, 232, 228, 0.5);
-    min-height: 260px;
+    min-height: auto;
   }
   &.c-sun{
     footer{
       background-color: rgba(235, 232, 228, 0.5);
-      min-height: 360px;
+      min-height: auto;
+    }
+  }
+}
+
+.related-articles{
+  .card-v8{
+    &.c-sun{
+      footer{
+        min-height: auto;
+      }
     }
   }
 }
