@@ -117,6 +117,13 @@ section.wholesale {
 	}
 	p{
 		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	ul{
+		font-size: 16px;
+		list-style: initial;
+		padding-left: 20px;
+		margin-bottom: 8px;
 	}
 }
 
@@ -163,7 +170,6 @@ section.wholesale {
 	
 	.our-mission-text{
 		background-color: #dce3e6;
-		min-height: 650px;
 		padding: 25px 15px;
 
 		@include breakpoint(md) {
@@ -234,7 +240,7 @@ section.wholesale {
 		h4{
 			font-family: "Work Sans";
 			font-weight: 300;
-			font-size: 23px;
+			font-size: 21px;
 			text-transform: uppercase;
 			margin-bottom: 10px;
 		}

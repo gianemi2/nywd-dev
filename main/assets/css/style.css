@@ -2814,7 +2814,8 @@ html:not(.js) .no-js\:is-hidden {
 .sr-only, .sr-only-focusable:not(:focus):not(:focus-within) {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -12643,6 +12644,14 @@ h1, h2, h3, h4 {
   background-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
 }
 
+.text-subtitle {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 :root {
   --btn-font-size: 0.9em;
   --btn-padding-x: var(--space-md);
@@ -13814,6 +13823,13 @@ section.wholesale {
 }
 .policy-main p {
   margin-bottom: 20px;
+  font-size: 16px;
+}
+.policy-main ul {
+  font-size: 16px;
+  list-style: initial;
+  padding-left: 20px;
+  margin-bottom: 8px;
 }
 
 .why-section ul li {
@@ -13852,7 +13868,6 @@ section.wholesale {
 
 .our-mission .our-mission-text {
   background-color: #dce3e6;
-  min-height: 650px;
   padding: 25px 15px;
 }
 @media (min-width: 64rem) {
@@ -13927,7 +13942,7 @@ section.wholesale {
 .content-why-us .grid h4 {
   font-family: "Work Sans";
   font-weight: 300;
-  font-size: 23px;
+  font-size: 21px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -14304,6 +14319,7 @@ Usage: codyhouse.co/license
 @media (min-width: 64rem) {
   .hero.hero-sunglasses--wholesale {
     background-image: url("/assets/img/banner-Sunglasses-Wholesale.jpg");
+    background-position: top;
   }
 }
 
@@ -16379,7 +16395,8 @@ Usage: codyhouse.co/license
 }
 .offnav__a11y-close-btn:focus {
   clip: auto;
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
   outline: 3px solid var(--color-primary);
 }
 

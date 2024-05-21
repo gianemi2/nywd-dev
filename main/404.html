@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include('head.html', {"title": "404", "description": ""})
+</head>
+
+<body>
+  <div class="off-canvas off-canvas--full-width off-canvas--navigation js-off-canvas js-off-canvas--nav">
+
+    <!-- MAIN -->
+    <main class="off-canvas__main bg shadow-sm">
+      <!-- TOP BAR -->
+      <div class="pre-header padding-y-xs js-pre-header">
+        <div class="container max-width-lg position-relative">
+          <div class="text-component text-center text-xs padding-x-lg">
+            <p>OPEN AN ACCOUNT TODAY TO START SAVING! <a href="become-a-member.html" class="color-inherit">REGISTER
+                NOW</a></p>
+          </div>
+
+        </div>
+      </div><!-- /TOP BAR -->
+      @@include('header.html')
+
+      <!-- BANNER BECOME A MEBER -->
+      <section class="feature-v4 hero-become hero-login ">
+        <div class="container">
+          <div class="feature-v4__grid grid gap-md items-center">
+            <div class="col-6@md">
+              <figure>
+                <img class="block" src="/assets/img/banner-404.jpg"
+                  alt="404 banner">
+              </figure>
+            </div>
+
+            <div class="col-6@md position-relative z-index-1 form-main">
+
+              <div class="padding-md padding-top-0 padding-lg@md">
+                <div class="text-component text-center margin-bottom-sm gap-sm flex flex-column items-center">
+                  <h1 class="text-xxxl">Page Not Found</h1>
+                  <p class="margin-bottom-md text-md">Sorry, we couldn't find <br> the page you are looking for. </p>
+                  <a class="btn btn--primary" href="/">Back to Home</a>
+                </p>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section><!-- /BANNER LOGIN -->
+
+
+
+      @@include('footer.html')
+
+    </main><!-- /MAIN -->
+
+    @@include('off-canvas-navigation.html')
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.toggle-language').on('click', function (e) {
+        e.preventDefault();
+        $('.choose-language').toggleClass('open-language');
+      });
+
+    });
+  </script>
+</body>
+
+</html>

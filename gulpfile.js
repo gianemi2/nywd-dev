@@ -91,6 +91,7 @@ function includeHTML() {
 
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async function () {
 
+  await cleanCSS();
   await purgeCSS();
   // minify the scripts.js file and copy it to the dist folder
   await minifyJs();
@@ -133,6 +134,10 @@ gulp.task('dist', async function () {
 
 function cleanDist() {
   return del('dist/**')
+}
+
+function cleanCSS() {
+  return del('dist/assets/css/**')
 }
 
 function purgeCSS() {

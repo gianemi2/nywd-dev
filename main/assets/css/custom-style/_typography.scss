@@ -79,3 +79,11 @@ p.text-base{
 .color-gradient-primary-right { background-image: linear-gradient(90deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
 .color-gradient-primary-bottom { background-image: linear-gradient(180deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
 .color-gradient-primary-left { background-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
+
+.text-subtitle{
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
