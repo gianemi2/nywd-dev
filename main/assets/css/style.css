@@ -13989,8 +13989,6 @@ section.wholesale {
 .our-team .item-team p {
   text-align: left;
   padding: 5%;
-  font-size: 1.2rem;
-  line-height: 1.3em;
   position: absolute;
   background-color: rgba(164, 179, 185, 0.9);
   width: 100%;
@@ -14044,6 +14042,11 @@ Descr: A full-width callout section
 Usage: codyhouse.co/license
 
 -------------------------------- */
+.hero.banner-question {
+  padding-top: 130px;
+  padding-bottom: 90px;
+}
+
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -14357,6 +14360,12 @@ Usage: codyhouse.co/license
   .hero.hero-blog {
     background-image: url("/assets/img/banner-blog.jpg");
   }
+}
+
+.hero.hero-frontpage h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 /* -------------------------------- 

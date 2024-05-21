@@ -8,6 +8,10 @@ Descr: A full-width callout section
 Usage: codyhouse.co/license
 
 -------------------------------- */
+.hero.banner-question{
+	padding-top: 130px;
+	padding-bottom: 90px;
+}
 
 .hero {
   	// if bg = img
@@ -44,6 +48,7 @@ p{
 		font-weight: 600;
 	}
 }
+
 
 &.hero-left{
 	
@@ -343,5 +348,13 @@ p{
 
 	@include breakpoint(md) {
 		background-image: url('/assets/img/banner-blog.jpg');
+	}
+}
+
+.hero.hero-frontpage{
+	h2{
+		color: white;
+		font-size: 36px;
+		font-weight: 500;
 	}
 }
