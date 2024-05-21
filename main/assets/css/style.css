@@ -13908,6 +13908,22 @@ section.wholesale {
 .content-why-us .grid {
   align-items: center;
 }
+.content-why-us .grid h3 {
+  margin-bottom: 24px;
+  font-size: 33px;
+}
+@media (min-width: 64rem) {
+  .content-why-us .grid h3 {
+    font-size: calc(var(--text-lg) * var(--text-scale-ratio));
+  }
+}
+.content-why-us .grid h4 {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 .content-why-us .grid p {
   line-height: 1.4em;
   font-size: 16px;
