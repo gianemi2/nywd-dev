@@ -97,6 +97,7 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   await moveJS();
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
+  await moveFavicon();
   gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass', moveAssets, reload]));
   gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, reload]));
   gulp.watch('main/*.html', gulp.series([
@@ -121,6 +122,7 @@ gulp.task('dist', async function () {
   await moveJS();
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
+  await moveFavicon();
   // copy all html files inside main folder to the dist folder 
   await moveContent();
   await includeHTML();
@@ -174,6 +176,17 @@ function moveAssets() {
   return new Promise(function (resolve, reject) {
     var stream = gulp.src(['main/assets/img/**'], { allowEmpty: true })
       .pipe(gulp.dest(assetsFolder + 'img'));
+
+    stream.on('finish', function () {
+      resolve();
+    });
+  });
+};
+
+function moveFavicon() {
+  return new Promise(function (resolve, reject) {
+    var stream = gulp.src(['main/assets/favicon/**'], { allowEmpty: true })
+      .pipe(gulp.dest(assetsFolder + 'favicon'));
 
     stream.on('finish', function () {
       resolve();
