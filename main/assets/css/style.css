@@ -16015,6 +16015,8 @@ Usage: codyhouse.co/license
   position: absolute;
   left: 0;
   background-color: transparent;
+  outline: none !important;
+  color: inherit !important;
 }
 .f-header__mobile-content .f-header__logo {
   left: 0px;

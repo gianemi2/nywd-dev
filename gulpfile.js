@@ -10,6 +10,7 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 var purgecss = require('gulp-purgecss');
 var fileinclude = require('gulp-file-include');
+var del = require('del');
 
 // js file paths
 var utilJsPath = 'node_modules/codyhouse-framework/main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
@@ -114,6 +115,7 @@ var distFolder = 'dist/';
 var assetsFolder = 'dist/assets/';
 
 gulp.task('dist', async function () {
+  await cleanDist();
   // remove unused classes from the style.css file with PurgeCSS and copy it to the dist folder
   await purgeCSS();
   // minify the scripts.js file and copy it to the dist folder
@@ -128,6 +130,10 @@ gulp.task('dist', async function () {
   await includeHTML();
   console.log('Distribution task completed!')
 });
+
+function cleanDist() {
+  return del('dist/**')
+}
 
 function purgeCSS() {
   return new Promise(function (resolve, reject) {
