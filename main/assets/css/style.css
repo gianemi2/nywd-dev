@@ -13357,6 +13357,14 @@ Usage: codyhouse.co/license
   margin-bottom: 20px;
 }
 
+.wholesale .card-v9.card-hover-no-btn {
+  background-size: 100%;
+  transition: 0.3s;
+}
+.wholesale .card-v9.card-hover-no-btn:hover {
+  background-size: 110%;
+}
+
 .card-v9 {
   display: block;
   position: relative;
@@ -13419,13 +13427,12 @@ Usage: codyhouse.co/license
 .card-v9__btn::after {
   content: "";
   position: absolute;
-  border: 1px solid #fff;
+  background-color: rgba(164, 179, 185, 0.9);
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.8);
   opacity: 0;
   transform: translateY(25%);
   transition: opacity 0.3s, transform 0.3s var(--ease-out);
