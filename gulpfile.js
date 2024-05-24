@@ -155,6 +155,7 @@ gulp.task('dist', async function () {
   await moveContent();
   await moveEsTranslation();
   await includeHTML();
+  await includeHTMLES();
   console.log('Distribution task completed!')
 });
 
