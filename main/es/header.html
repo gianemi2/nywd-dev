@@ -1,20 +1,19 @@
+<!-- HEADER -->
 <!-- TOP BAR -->
 <div class="pre-header padding-y-xs js-pre-header">
 <div class="container max-width-lg position-relative">
     <div class="text-component text-center text-xs padding-x-lg">
-    <p>OPEN AN ACCOUNT TODAY TO START SAVING! <a href="become-a-member.html" class="color-inherit">REGISTER
-        NOW</a></p>
+    <p>¡ABRE UNA CUENTA HOY PARA EMPEZAR A AHORRAR! <a href="become-a-member.html" class="color-inherit">REGÍSTRATE AHORA</a></p>
     </div>
 
 </div>
 </div><!-- /TOP BAR -->
-<!-- HEADER -->
 <header class="f-header js-f-header bg hide-nav js-hide-nav js-hide-nav--main"
     data-nav-target-class="f-header--expanded">
     <div class="f-header__mobile-content container max-width-lg">
-        <select name="language-picker-select" id="language-picker-select">
-            <option lang="en" value="english" selected>EN</option>
-            <option lang="es" value="espanol">ES</option>
+        <select name="language-picker-select js-language-switcher" id="language-picker-select">
+            <option href="en" lang="en" value="english">EN</option>
+            <option lang="es" value="espanol" selected>ES</option>
         </select>
         <a href="index.html" width="104" class="f-header__logo">
             <img src="/assets/img/logo-black.svg" alt="NYWD | Global B2B Designer Eyewear Distributor" />
@@ -55,9 +54,9 @@
                         <form action="" class="language-picker__form">
                             <label for="language-picker-select">Select your language</label>
 
-                            <select name="language-picker-select" id="language-picker-select">
-                                <option lang="en" value="english" selected>EN</option>
-                                <option lang="es" value="espanol">ES</option>
+                            <select name="language-picker-select js-language-switcher" id="language-picker-select">
+                                <option lang="en" value="english">EN</option>
+                                <option lang="es" value="espanol" selected>ES</option>
                             </select>
                         </form>
                     </div>
@@ -70,3 +69,11 @@
         </div>
     </div>
 </header> <!-- /HEADER -->
+<script>
+    document.querySelectorAll('.js-language-switcher').forEach(elem => {
+        console.log(elem);
+        elem.addEventListener('change', e => {
+            console.log(e.target.value);
+        })
+    })
+</script>

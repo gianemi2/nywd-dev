@@ -89,6 +89,25 @@ function includeHTML() {
   });
 }
 
+function includeHTMLES() {
+  return new Promise(function (resolve, reject) {
+    var stream = gulp.src([
+      'main/es/*.html',
+      '!header.html', // ignore
+      '!footer.html' // ignore
+    ])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest(distFolder + 'es'))
+
+    stream.on('finish', function () {
+      resolve();
+    });
+  });
+}
+
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async function () {
 
   await cleanCSS();
@@ -101,14 +120,20 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   await moveAssets();
   await moveFavicon();
   gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass', moveAssets, reload]));
-  gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, reload]));
+  gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, moveJS, reload]));
+  //gulp.watch(scriptsJsPath + '/*.js', gulp.series(['scripts', moveAssets, reload]));
+  await moveJS();
   gulp.watch('main/*.html', gulp.series([
     moveContent,
     includeHTML,
     reload
   ]));
+  gulp.watch('main/es/*.html', gulp.series([
+    moveEsTranslation,
+    includeHTMLES,
+    reload
+  ]))
 }));
-
 
 /* Gulp dist task */
 // create a distribution folder for production
@@ -128,6 +153,7 @@ gulp.task('dist', async function () {
   await moveFavicon();
   // copy all html files inside main folder to the dist folder 
   await moveContent();
+  await moveEsTranslation();
   await includeHTML();
   console.log('Distribution task completed!')
 });
@@ -205,12 +231,25 @@ function moveFavicon() {
   });
 };
 
+function moveEsTranslation() {
+  return new Promise(function (resolve, reject) {
+    var stream = gulp.src('main/es/*.html')
+      .pipe(gulp.dest(distFolder + 'es'));
+
+    stream.on('finish', function () {
+      console.log("Moved content");
+      resolve();
+    });
+  });
+}
+
 function moveContent() {
   return new Promise(function (resolve, reject) {
     var stream = gulp.src('main/*.html')
       .pipe(gulp.dest(distFolder));
 
     stream.on('finish', function () {
+      console.log("Moved content");
       resolve();
     });
   });
