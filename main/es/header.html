@@ -11,9 +11,9 @@
 <header class="f-header js-f-header bg hide-nav js-hide-nav js-hide-nav--main"
     data-nav-target-class="f-header--expanded">
     <div class="f-header__mobile-content container max-width-lg">
-        <select name="language-picker-select js-language-switcher" id="language-picker-select">
-            <option href="en" lang="en" value="english">EN</option>
-            <option lang="es" value="espanol" selected>ES</option>
+        <select class="js-mobile-language-picker" name="language-picker-select" id="language-picker-select">
+            <option lang="en" value="en" data-url="/">EN</option>
+            <option lang="es" value="es" selected data-url="/es">ES</option>
         </select>
         <a href="index.html" width="104" class="f-header__logo">
             <img src="/assets/img/logo-black.svg" alt="NYWD | Global B2B Designer Eyewear Distributor" />
@@ -35,12 +35,12 @@
 
             <ul class="f-header__list flex-grow flex-basis-0  justify-center@md">
                 <li class="f-header__item"><a href="about.html"
-                        class="f-header__link @@if (context.active === 'about.html') {f-header__active}">About</a></li>
+                        class="f-header__link @@if (context.active === 'about.html') {f-header__active}">ACERCA DE</a></li>
                 <li class="f-header__item"><a href="why-us.html"
-                        class="f-header__link @@if (context.active === 'why-us.html') {f-header__active}">Why Us</a>
+                        class="f-header__link @@if (context.active === 'why-us.html') {f-header__active}">POR QUÉ NOSOTROS</a>
                 </li>
                 <li class="f-header__item"><a href="career.html"
-                        class="f-header__link  @@if (context.active === 'career.html') {f-header__active}">Career</a>
+                        class="f-header__link  @@if (context.active === 'career.html') {f-header__active}">CARRERAS</a>
                 </li>
                 <li class="f-header__item"><a href="faq.html"
                         class="f-header__link @@if (context.active === 'faq.html') {f-header__active}">Faq</a></li>

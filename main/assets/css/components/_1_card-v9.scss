@@ -15,10 +15,10 @@ Usage: codyhouse.co/license
 }
 .wholesale{
 	.card-v9.card-hover-no-btn{
-		background-size: 100%;
+		background-size: auto 100%;
 		transition: .3s;
 		&:hover{
-			background-size: 110%;
+			background-size: auto 110%;
 		}
 	}
 }

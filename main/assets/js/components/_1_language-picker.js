@@ -1,6 +1,23 @@
 // File#: _1_language-picker
 // Usage: codyhouse.co/license
+function nywd_get_language_url(langCode) {
+	const base = window.location.origin;
+	const path = window.location.pathname.split('/').at(-1);
+	if (langCode == "en") {
+		return `${base}/${path}`;
+	} else {
+		return `${base}/${langCode}/${path}`
+	}
+}
+
 (function () {
+
+	var mobileLanguageSwitcher = document.querySelector('.js-mobile-language-picker');
+	console.log(mobileLanguageSwitcher);
+	mobileLanguageSwitcher.addEventListener('change', (e) => {
+		return window.location.replace(nywd_get_language_url(e.target.value));
+	})
+
 	var LanguagePicker = function (element) {
 		this.element = element;
 		this.select = this.element.getElementsByTagName('select')[0];
@@ -121,10 +138,7 @@
 	function getLanguageUrl(option) {
 		// ⚠️ Important: You should replace this return value with the real link to your website in the selected language
 		// option.value gives you the value of the language that you can use to create your real url (e.g, 'english' or 'italiano')
-		if (option.lang === "en")
-			return window.location.origin;
-
-		return window.location.origin + '/' + option.lang;
+		return nywd_get_language_url(option.lang)
 	};
 
 	function initLanguageSelection(picker) {
