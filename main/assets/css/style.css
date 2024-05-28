@@ -12788,6 +12788,10 @@ Usage: codyhouse.co/license
   --accordion-icon-stroke-width: 2px;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .accordion {
   max-width: 90%;
   margin: 0 auto;
@@ -13367,11 +13371,8 @@ Usage: codyhouse.co/license
 }
 
 .wholesale .card-v9.card-hover-no-btn {
-  background-size: auto 100%;
+  background-size: cover;
   transition: 0.3s;
-}
-.wholesale .card-v9.card-hover-no-btn:hover {
-  background-size: auto 110%;
 }
 
 .card-v9 {
