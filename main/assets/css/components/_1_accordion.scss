@@ -115,7 +115,7 @@ Usage: codyhouse.co/license
 	}
 
 	> *:first-child {
-	  transform: rotate(-90deg);
+	  transform: rotate(0deg);
 	}
   }
 }
@@ -144,7 +144,10 @@ Usage: codyhouse.co/license
 	transform: rotate(0);
 
 	> *:first-child {
-	  transform: rotate(0);
+	  //transform: rotate(0);
+	}
+	> *:last-child {
+		transform: rotate(90deg);
 	}
   }
 }

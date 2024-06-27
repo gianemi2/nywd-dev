@@ -12870,7 +12870,7 @@ Usage: codyhouse.co/license
   transform-origin: 50% 50%;
 }
 .accordion__icon-plus .icon__group > *:first-child {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .accordion__item--is-open > .accordion__header > .accordion__icon-arrow .icon__group { /* animated arrow icon */ }
@@ -12890,8 +12890,8 @@ Usage: codyhouse.co/license
 .accordion__item--is-open > .accordion__header > .accordion__icon-plus .icon__group { /* animated plus icon */
   transform: rotate(0);
 }
-.accordion__item--is-open > .accordion__header > .accordion__icon-plus .icon__group > *:first-child {
-  transform: rotate(0);
+.accordion__item--is-open > .accordion__header > .accordion__icon-plus .icon__group > *:last-child {
+  transform: rotate(90deg);
 }
 
 .accordion__panel {
