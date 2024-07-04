@@ -13224,6 +13224,13 @@ Usage: codyhouse.co/license
     font-size: var(--text-xxl);
   }
 }
+.article__category {
+  color: rgb(100, 102, 104);
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 /* -------------------------------- 
 
 File#: _1_back-to-top
