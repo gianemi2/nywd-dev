@@ -13365,6 +13365,11 @@ Usage: codyhouse.co/license
     display: none;
   }
 }
+.why-chose .article__category {
+  margin-top: 15px;
+  margin-bottom: 0 !important;
+}
+
 /* -------------------------------- 
 
 File#: _1_card-v9
