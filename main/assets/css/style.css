@@ -13224,6 +13224,13 @@ Usage: codyhouse.co/license
     font-size: var(--text-xxl);
   }
 }
+.article__category {
+  color: rgb(100, 102, 104);
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 /* -------------------------------- 
 
 File#: _1_back-to-top
@@ -13358,6 +13365,11 @@ Usage: codyhouse.co/license
     display: none;
   }
 }
+.why-chose .article__category {
+  margin-top: 15px;
+  margin-bottom: 0 !important;
+}
+
 /* -------------------------------- 
 
 File#: _1_card-v9
@@ -16482,11 +16494,22 @@ Usage: codyhouse.co/license
 .sign-up-form #recaptcha div {
   margin: 0 auto;
 }
-.sign-up-form input {
+.sign-up-form input,
+.sign-up-form select {
   background-color: #fff;
   font-size: 14px;
   height: 55px;
   border: none;
+}
+.sign-up-form .select-w-icon {
+  position: relative;
+}
+.sign-up-form .select-w-icon svg {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
 }
 .sign-up-form textarea {
   background-color: #fff;

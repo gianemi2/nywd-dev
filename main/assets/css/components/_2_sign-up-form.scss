@@ -77,11 +77,22 @@ Usage: codyhouse.co/license
 			margin: 0 auto;
 		}
 	}
-	input{
+	input, 
+	select{
 		background-color: #fff;
 		font-size: 14px;
 		height: 55px;
 		border: none;
+	}
+	.select-w-icon{
+		position: relative;
+		svg{
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 2rem;
+		}
 	}
 	textarea{
 		background-color: #fff;

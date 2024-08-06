@@ -179,6 +179,7 @@ function purgeCSS() {
         },
         defaultExtractor: content => content.match(/[\w-/:%@]+(?<!:)/g) || []
       }))
+      .pipe(cleanCSS())
       .pipe(gulp.dest(distFolder + '/assets/css'));
 
     stream.on('finish', function () {
