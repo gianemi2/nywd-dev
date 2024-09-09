@@ -13227,7 +13227,7 @@ Usage: codyhouse.co/license
 .article__category {
   color: rgb(100, 102, 104);
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 300;
 }
 
@@ -14187,6 +14187,10 @@ Usage: codyhouse.co/license
 
 .hero.banner-light h3 {
   margin-bottom: 20px;
+}
+
+.hero.banner-muted {
+  background-color: #DCE3E6;
 }
 
 .hero--overlay-layer::after {
