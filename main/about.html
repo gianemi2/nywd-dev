@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "About NYWD: Leading Wholesale Distributor of Designer Eyewear", "description": "Learn more about NYWD, the leading distributor in the eyewear industry, offering a wide range of high-quality designer glasses and sunglasses. Discover our history, mission, and commitment to providing the best products and services to optical stores globally."})
+  @@include('./components/head.html', {"title": "About NYWD: Leading Wholesale Distributor of Designer Eyewear", "description": "Learn more about NYWD, the leading distributor in the eyewear industry, offering a wide range of high-quality designer glasses and sunglasses. Discover our history, mission, and commitment to providing the best products and services to optical stores globally."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "about.html"})
+      @@include('./components/header.html', {"active": "about.html"})
       <!--BANNER-->
       <section class="hero hero-first hero--mobile-banner padding-y-xxl hero-black hero--about">
         <div class="container max-width-adaptive-lg">
@@ -200,11 +200,11 @@
         </div>
       </section>
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "about.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "about.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

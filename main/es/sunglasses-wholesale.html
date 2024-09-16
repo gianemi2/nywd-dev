@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Compra Lentes de Sol al Por Mayor Desde E.E.U.U.", "description": "Aprovecha nuestra selección de lentes de sol al por mayor para impulsar el éxito de tu tienda. Con NYWD, maximiza tus márgenes con lentes de diseñador a precios inigualables. ¡Hazte socio y transforma tu inventario hoy mismo!"})
+  @@include('./components/head.html', {"title": "Compra Lentes de Sol al Por Mayor Desde E.E.U.U.", "description": "Aprovecha nuestra selección de lentes de sol al por mayor para impulsar el éxito de tu tienda. Con NYWD, maximiza tus márgenes con lentes de diseñador a precios inigualables. ¡Hazte socio y transforma tu inventario hoy mismo!"})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
 
       <!--BANNER-->
@@ -361,11 +361,11 @@
         </div>
       </section><!-- /BANNER QUESTION -->
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

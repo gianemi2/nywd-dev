@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Your Questions Answered | NYWD", "description": "Find answers to frequently asked questions about our products, services, and company policies. Get the information you need to make informed decisions about your purchases."})
+  @@include('./components/head.html', {"title": "Your Questions Answered | NYWD", "description": "Find answers to frequently asked questions about our products, services, and company policies. Get the information you need to make informed decisions about your purchases."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "faq.html"})
+      @@include('./components/header.html', {"active": "faq.html"})
 
 
       <!--BANNER-->
@@ -300,11 +300,11 @@
 
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "faq.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "faq.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

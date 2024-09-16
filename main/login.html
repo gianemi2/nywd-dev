@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Member Login - Access Your NYWD Wholesale Eyewear Account", "description": "Log in to your NYWD member portal to manage wholesale eyewear orders, explore designer glasses collections, and stay informed on optical industry trends. Your gateway to premium eyewear distribution."})
+  @@include('./components/head.html', {"title": "Member Login - Access Your NYWD Wholesale Eyewear Account", "description": "Log in to your NYWD member portal to manage wholesale eyewear orders, explore designer glasses collections, and stay informed on optical industry trends. Your gateway to premium eyewear distribution."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
       <!-- BANNER BECOME A MEBER -->
       <section class="feature-v4 hero-become hero-login ">
@@ -79,11 +79,11 @@
 
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

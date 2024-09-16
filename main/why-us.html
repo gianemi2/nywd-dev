@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Why Choose NYWD? Your Wholesale Fashion Eyewear Distributor", "description": "Discover why NYWD stands out as a top choice for optical stores seeking quality designer eyewear. Learn about our extensive inventory, competitive pricing, fast shipping, and dedicated customer support. Partner with us for seamless eyewear sourcing."})
+  @@include('./components/head.html', {"title": "Why Choose NYWD? Your Wholesale Fashion Eyewear Distributor", "description": "Discover why NYWD stands out as a top choice for optical stores seeking quality designer eyewear. Learn about our extensive inventory, competitive pricing, fast shipping, and dedicated customer support. Partner with us for seamless eyewear sourcing."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-@@include('header.html', {"active": "why-us.html"})
+@@include('./components/header.html', {"active": "why-us.html"})
 
 
       <!--BANNER-->
@@ -244,11 +244,11 @@
 
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "why-us.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "why-us.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

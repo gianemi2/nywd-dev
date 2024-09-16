@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Acerca de NYWD: Distribuidor Mayorista Líder en Gafas de Diseñador", "description": "Conoce más sobre NYWD, el distribuidor líder en la industria de gafas, ofreciendo una amplia gama de gafas y lentes de sol de diseñador de alta calidad. Descubre nuestra historia, misión y compromiso con la excelencia en productos y servicios para tiendas ópticas a nivel mundial."})
+  @@include('./components/head.html', {"title": "Acerca de NYWD: Distribuidor Mayorista Líder en Gafas de Diseñador", "description": "Conoce más sobre NYWD, el distribuidor líder en la industria de gafas, ofreciendo una amplia gama de gafas y lentes de sol de diseñador de alta calidad. Descubre nuestra historia, misión y compromiso con la excelencia en productos y servicios para tiendas ópticas a nivel mundial."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "about.html"})
+      @@include('./components/header.html', {"active": "about.html"})
       <!--BANNER-->
       <section class="hero hero-first hero--mobile-banner padding-y-xxl hero-black hero--about">
         <div class="container max-width-adaptive-lg">
@@ -150,11 +150,11 @@
         </div>
       </section>
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "about.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "about.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

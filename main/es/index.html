@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Soluciones de Venta al Por Mayor de Gafas | NYWD - Monturas de Diseñador a Precio de Mayorista", "description": "Aumenta los beneficios de tu negocio de gafas con NYWD, tu distribuidor de confianza de gafas de diseñador al por mayor. Explora un vasto inventario de monturas auténticas de diseñador, precios competitivos y envío rápido. Únete a nosotros para descuentos exclusivos y pedidos simplificados."})
+  @@include('./components/head.html', {"title": "Soluciones de Venta al Por Mayor de Gafas | NYWD - Monturas de Diseñador a Precio de Mayorista", "description": "Aumenta los beneficios de tu negocio de gafas con NYWD, tu distribuidor de confianza de gafas de diseñador al por mayor. Explora un vasto inventario de monturas auténticas de diseñador, precios competitivos y envío rápido. Únete a nosotros para descuentos exclusivos y pedidos simplificados."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
       <!-- BANNER -->
       <section class="hero hero-first hero-home hero-frontpage hero-black padding-y-xl"
@@ -418,11 +418,11 @@
           </div>
         </div>
       </section><!-- /BANNER QUESTION -->
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "The Authorized Distributor of Phillipe Charriol Eyewear", "description": "NYWD proudly announces its status as the official authorized distributor of Phillipe Charriol, bringing exclusive, high-quality designer eyewear to your collection. Explore our range of Charriol’s sophisticated and elegant styles."})
+  @@include('./components/head.html', {"title": "The Authorized Distributor of Phillipe Charriol Eyewear", "description": "NYWD proudly announces its status as the official authorized distributor of Phillipe Charriol, bringing exclusive, high-quality designer eyewear to your collection. Explore our range of Charriol’s sophisticated and elegant styles."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
       <!--BANNER-->
       <section class="hero hero-first hero-home hero-black padding-y-xxl hero--mobile-banner"
@@ -115,11 +115,11 @@
       </section>
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

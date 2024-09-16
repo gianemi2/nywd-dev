@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "News | NYWD: Designer Optical Distributor", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
+  @@include('./components/head.html', {"title": "News | NYWD: Designer Optical Distributor", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "blog.html"})
+      @@include('./components/header.html', {"active": "blog.html"})
 
 
       <!--BANNER-->
@@ -19,7 +19,7 @@
           <div
             class="max-width-xs margin-left-auto main-text-hero text-component line-height-lg text-space-y-md text-right">
 
-            <h1 class="desk text-left">Leading Global Distributor of Designer Eyewear</h1>
+            <h1 class="desk text-left">Obtén Consejos Exclusivos sobre Inventario de Nuestros Expertos</h1>
           </div>
 
         </div>
@@ -54,101 +54,18 @@
               </div>
             </article> <!-- /ITEM ARTICLE -->
 
-            <!-- ITEM ARTICLE 5 SMART STOCKING-->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="Smart-Stocking-Strategies-for-Optical-Stores.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-smart-stocking.jpg" alt="5 Smart Stocking Strategies For Optical Stores">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="Smart-Stocking-Strategies-for-Optical-Stores.html">5 Estrategias Inteligentes de Almacenamiento para Tiendas de Óptica</a>
-                  </h3>
-                  <p>Dirigir una tienda de óptica exitosa requiere más que solo tener una gran selección de gafas; se trata de estrategias inteligentes de almacenamiento que impulsen tus ganancias. Aquí tienes consejos completos para ayudarte a gestionar tu inventario de manera efectiva y mantenerte a la vanguardia en el competitivo mercado de gafas. Gestión Estratégica del Inventario...</p>
-                  <a href="Smart-Stocking-Strategies-for-Optical-Stores.html" class="link"> LEER MÁS</a>
-                </div>
-
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE LUXURY VS BUDGET -->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="#0">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-all-best-selling.jpg"
-                    alt="Luxury vs. Budget: What's the Difference? The Truth About Luxury Eyewear">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="#0">Haciendo la Elección Correcta para tu Tienda: Gafas de Lujo vs. Gafas Económicas</a>
-                  </h3>
-                  <p>Al decidir qué tipo de gafas almacenar en tu tienda, comprender qué opciones se venden mejor puede influir significativamente en tus decisiones de inventario. Aquí tienes un desglose para ayudarte a elegir sabiamente:
-Gafas de Lujo: Las marcas de alta gama son típicamente las mejores para tiendas en áreas acomodadas o aquellas que se especializan en productos exclusivos...</p>
-                  <a href="#0" class="link"> LEER MÁS</a>
-                </div>
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE ALL BEST SELLING 2-->
-            <article class="story col-4@md">
-              <a class="story__img radius-md" href="#0">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-last.jpg" alt="Image description">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="#0">All Best Selling Sunglasses Fashion</a>
-                  </h3>
-                  <p>Wholesale Designer Eyewear For EveryoneNYWD makes stocking your eyewear store simple. With designer
-                    brands everyone loves, your customers will surely find the perfect designer…</p>
-                  <a href="#0" class="link"> LEER MÁS</a>
-                </div>
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE TRENDING EYEWEAR STYLES -->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="Trending-Eyewear-Styles.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-trending-eyewear-styles-for-2023.jpg" alt="Image description">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="Trending-Eyewear-Styles.html">Estilos de gafas de moda para 2023</a>
-                  </h3>
-                  <p>Aquí hay algunas consideraciones que debes tener en cuenta al elegir nuevas gafas. Ya sea que necesites lentes de protección RX para mejorar tu visión o un par de gafas con estilo, las gafas pueden transformar por completo tu apariencia. Los anteojos son uno de los accesorios más importantes ya que pueden ser icónicos y empoderadores. Al elegir monturas para expresar...</p>
-                  <a href="Trending-Eyewear-Styles.html" class="link"> LEER MÁS</a>
-                </div>
-
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
+            @@loop("./components/blog-item.html", "./data/posts.json")
 
           </div>
 
 
         </div>
       </div>
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "blog.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "blog.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

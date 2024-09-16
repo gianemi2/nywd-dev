@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "News | NYWD: Designer Optical Distributor", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
+  @@include('./components/head.html', {"title": "News | NYWD: Designer Optical Distributor", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "blog.html"})
+      @@include('./components/header.html', {"active": "blog.html"})
 
 
       <!--BANNER-->
@@ -19,7 +19,7 @@
           <div
             class="max-width-xs margin-left-auto main-text-hero text-component line-height-lg text-space-y-md text-right">
 
-            <h1 class="desk text-left">Leading Global Distributor of Designer Eyewear</h1>
+            <h1 class="desk text-left">Get Exclusive Inventory Tips from Our Eyewear Experts</h1>
           </div>
 
         </div>
@@ -60,106 +60,18 @@
               </div>
             </article> <!-- /ITEM ARTICLE -->
 
-            <!-- ITEM ARTICLE 5 SMART STOCKING-->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="Smart-Stocking-Strategies-for-Optical-Stores.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-smart-stocking.jpg" alt="5 Smart Stocking Strategies For Optical Stores">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="Smart-Stocking-Strategies-for-Optical-Stores.html">5 Smart Stocking Strategies For Optical
-                      Stores</a>
-                  </h3>
-                  <p class="article__category">Marketing Industry - February 26, 2024</p>
-                  <p>Running a successful optical store requires more than just having a great selection of eyewear; it’s about smart stocking strategies that boost your bottom line. Here are comprehensive tips to help you manage your inventory effectively and stay ahead in the competitive eyewear market. Strategic Inventory Management. Effective inventory management is the cornerstone... </p>
-                  <a href="Smart-Stocking-Strategies-for-Optical-Stores.html" class="link"> READ MORE</a>
-                </div>
-
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE LUXURY VS BUDGET -->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="making-the-right-choice-for-your-store.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-all-best-selling.jpg"
-                    alt="Making The Right Choice For Your Store: Luxury Vs. Budget Eyewear">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="making-the-right-choice-for-your-store.html">Making The Right Choice For Your Store: Luxury Vs. Budget Eyewear</a>
-                  </h3>
-                  <p class="article__category">Marketing Industry - September 05, 2024</p>
-                  <p>Here’s a breakdown to help you choose wisely. When deciding what type of eyewear to stock in your store, understanding which options sell better can significantly influence your inventory decisions.</p>
-                  <a href="making-the-right-choice-for-your-store.html" class="link"> READ MORE</a>
-                </div>
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE ALL BEST SELLING 2-->
-            <article class="story col-4@md">
-              <a class="story__img radius-md" href="the-psychology-of-eyewear.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/trending-eyewear-styles-for-2023@2x.jpg" alt="Image description">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="the-psychology-of-eyewear.html">The Psychology Of Eyewear: Boost Sales With These Insights</a>
-                  </h3>
-                  <p class="article__category">Marketing Industry - September 05, 2024</p>
-                  <p>Glasses have evolved from mere vision aids to significant elements of personal style, conveying subtle cues about an individual’s personality, preferences, and professional …</p>
-                  <a href="the-psychology-of-eyewear.html" class="link"> READ MORE</a>
-                </div>
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
-
-            <!-- ITEM ARTICLE TRENDING EYEWEAR STYLES -->
-            <article class="story col-4@md">
-              <a class="story__img radius-lg" href="Trending-Eyewear-Styles.html">
-                <figure class="aspect-ratio-4:3">
-                  <img src="/assets/img/post-trending-eyewear-styles-for-2023.jpg" alt="Image description">
-                </figure>
-              </a>
-
-              <div class="story__content">
-
-                <div class="text-component">
-                  <h3 class="story__title margin-bottom-md">
-                    <a href="Trending-Eyewear-Styles.html">Trending Eyewear Styles for 2023</a>
-                  </h3>
-                  <p class="article__category">Marketing Industry - January 11, 2023</p>
-                  <p>Whether you need rx frames to improve your vision or a stylish pair of sunglasses, eyewear can
-                    transform your entire look. Eyeglasses are among the most important accessories and can be iconic
-                    and empowering…</p>
-                  <a href="Trending-Eyewear-Styles.html" class="link"> READ MORE</a>
-                </div>
-
-              </div>
-            </article> <!-- /ITEM ARTICLE -->
+            @@loop("./components/blog-item.html", "./data/posts.json")
 
           </div>
 
 
         </div>
       </div>
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "blog.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "blog.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Carrera | NYWD: Distribuidor de Diseño Óptico", "description": "Buscamos personas talentosas para unirse a nuestro equipo. ¿Tienes experiencia en la industria óptica? Únete a nuestro equipo de distribución."})
+  @@include('./components/head.html', {"title": "Carrera | NYWD: Distribuidor de Diseño Óptico", "description": "Buscamos personas talentosas para unirse a nuestro equipo. ¿Tienes experiencia en la industria óptica? Únete a nuestro equipo de distribución."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "career.html"})
+      @@include('./components/header.html', {"active": "career.html"})
 
       <!--BANNER-->
       <section class="hero hero-career hero-first padding-y-xxl hero-black hero--mobile-banner">
@@ -63,11 +63,11 @@
       </section>
       <!--CONTENT CAREER-->
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "career.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "career.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

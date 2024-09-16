@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Latest Trends in Designer Eyewear for Optical Stores | NYWD", "description": "Discover the latest in eyewear fashion with NYWD’s blog. Explore trending styles, top designer brands, and essential insights for stocking your store with designer frames and sunglasses. Your go-to resource for wholesale designer eyewear."})
+  @@include('./components/head.html', {"title": "Latest Trends in Designer Eyewear for Optical Stores | NYWD", "description": "Discover the latest in eyewear fashion with NYWD’s blog. Explore trending styles, top designer brands, and essential insights for stocking your store with designer frames and sunglasses. Your go-to resource for wholesale designer eyewear."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-@@include('header.html')
+@@include('./components/header.html')
 
       <!-- ARTICLE SECTION -->
       <section class="article-post">
@@ -395,11 +395,11 @@
       </div>
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -93,8 +93,7 @@ function includeHTMLES() {
   return new Promise(function (resolve, reject) {
     var stream = gulp.src([
       'main/es/*.html',
-      '!header.html', // ignore
-      '!footer.html' // ignore
+      '!main/es/components/*.html'
     ])
       .pipe(fileinclude({
         prefix: '@@',
@@ -123,12 +122,12 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, moveJS, reload]));
   //gulp.watch(scriptsJsPath + '/*.js', gulp.series(['scripts', moveAssets, reload]));
   await moveJS();
-  gulp.watch('main/*.html', gulp.series([
+  gulp.watch(['main/*.html', 'main/components/*.html'], gulp.series([
     moveContent,
     includeHTML,
     reload
   ]));
-  gulp.watch('main/es/*.html', gulp.series([
+  gulp.watch(['main/es/*.html', 'main/es/components/*.html'], gulp.series([
     moveEsTranslation,
     includeHTMLES,
     reload

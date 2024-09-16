@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Marcos de Gafas al Por Mayor - Calidad Premium y Precios Insuperables", "description": "Descubre nuestra exclusiva selección de marcos de gafas al por mayor con precios inigualables. Únete a NYWD y accede a marcos de diseñador, beneficiando tu negocio con calidad superior y una amplia variedad de estilos. ¡Hazte socio hoy y transforma tu inventario!"})
+  @@include('./components/head.html', {"title": "Marcos de Gafas al Por Mayor - Calidad Premium y Precios Insuperables", "description": "Descubre nuestra exclusiva selección de marcos de gafas al por mayor con precios inigualables. Únete a NYWD y accede a marcos de diseñador, beneficiando tu negocio con calidad superior y una amplia variedad de estilos. ¡Hazte socio hoy y transforma tu inventario!"})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
 
       <!--BANNER-->
@@ -329,11 +329,11 @@
         </div>
       </section><!-- /BANNER QUESTION -->
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "¿Por Qué Elegir NYWD? Distribuidor Mayorista | Gafas de Moda", "description": "Descubre las razones para elegir a NYWD como tu socio en gafas de moda al por mayor. Conoce nuestro amplio inventario, precios competitivos, envío rápido y soporte al cliente dedicado. Únete a nosotros para una experiencia de compra superior en óptica."})
+  @@include('./components/head.html', {"title": "¿Por Qué Elegir NYWD? Distribuidor Mayorista | Gafas de Moda", "description": "Descubre las razones para elegir a NYWD como tu socio en gafas de moda al por mayor. Conoce nuestro amplio inventario, precios competitivos, envío rápido y soporte al cliente dedicado. Únete a nosotros para una experiencia de compra superior en óptica."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "why-us.html"})
+      @@include('./components/header.html', {"active": "why-us.html"})
 
 
       <!--BANNER-->
@@ -202,11 +202,11 @@ De Gafas Al Por Mayor De Moda?
 
 
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "why-us.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "why-us.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

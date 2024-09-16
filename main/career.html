@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Career | NYWD: Designer Optical Distributor", "description": "We are looking for talented individuals to join our team. Have experience in the optical industry? Join our designer eyewear, distribution team."})
+  @@include('./components/head.html', {"title": "Career | NYWD: Designer Optical Distributor", "description": "We are looking for talented individuals to join our team. Have experience in the optical industry? Join our designer eyewear, distribution team."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html', {"active": "career.html"})
+      @@include('./components/header.html', {"active": "career.html"})
 
 
 
@@ -68,11 +68,11 @@
       </section>
       <!--CONTENT CAREER-->
 
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html', {"active": "career.html"})
+    @@include('./components/off-canvas-navigation.html', {"active": "career.html"})
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

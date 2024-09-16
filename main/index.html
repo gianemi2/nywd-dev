@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @@include('head.html', {"title": "Eyewear Wholesale | Top Designer Frames at Wholesaler Prices", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
+  @@include('./components/head.html', {"title": "Eyewear Wholesale | Top Designer Frames at Wholesaler Prices", "description": "Increase your eyewear business’s bottom line with NYWD, your trusted wholesale designer eyewear distributor. Explore a vast inventory of authentic designer frames, competitive pricing, and fast shipping. Join us for exclusive discounts and simplified ordering."})
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- MAIN -->
     <main class="off-canvas__main bg shadow-sm">
-      @@include('header.html')
+      @@include('./components/header.html')
 
       <!-- BANNER -->
       <section class="hero hero-first hero-home hero-frontpage hero-black padding-y-xl"
@@ -451,11 +451,11 @@
           </div>
         </div>
       </section><!-- /BANNER QUESTION -->
-      @@include('footer.html')
+      @@include('./components/footer.html')
 
     </main><!-- /MAIN -->
 
-    @@include('off-canvas-navigation.html')
+    @@include('./components/off-canvas-navigation.html')
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
