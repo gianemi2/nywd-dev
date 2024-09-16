@@ -25,6 +25,7 @@ Usage: codyhouse.co/license
 
 .language-picker__button { // created in js - dropdown trigger. Pass custom classes using the data-trigger-class attribute of the .language-picker element
 	margin-right: -30px;
+  background-color: transparent;
   .icon { // dropdown arrow (edit inline SVG in JS file of component)
 	height: 20px;
 	width: 20px;

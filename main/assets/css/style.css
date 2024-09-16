@@ -14433,6 +14433,7 @@ Usage: codyhouse.co/license
 
 .language-picker__button {
   margin-right: -30px;
+  background-color: transparent;
 }
 .language-picker__button .icon {
   height: 20px;
