@@ -1,12 +1,44 @@
-<!-- ITEM ARTICLE ALL BEST SELLING 2-->
-<article class="story col-4@md">
-    <a class="story__img radius-md" href="@@href">
-        <figure class="aspect-ratio-4:3">
-            <img src="@@img" alt="Image description">
-        </figure>
+<!-- SIMPLE NEWS -->
+@@if(context.hero) {
+
+<!-- BIG IMAGE -->
+<article class="story col-8@md">
+    <a class="story__img radius-lg"
+    href="@@href">
+    <figure class="figure-post-big">
+        <img src="@@img"
+        alt="@@title">
+    </figure>
     </a>
 
     <div class="story__content">
+
+    <div class="text-component">
+        <h3 class="story__title margin-bottom-md">
+        <a href="@@href">@@title</a>
+        </h3>
+        @@if(context.category) {
+        <p class="article__category">@@category</p>
+        }
+        <p>@@excerpt...
+        </p>
+        <a href="@@href" class="link"> READ
+        MORE</a>
+    </div>
+
+    </div>
+</article> <!-- /ITEM ARTICLE -->
+}
+
+@@if(!context.hero) {
+    <article class="story col-4@md">
+        <a class="story__img radius-md" href="@@href">
+        <figure class="aspect-ratio-4:3">
+            <img src="@@img" alt="@@title">
+        </figure>
+        </a>
+
+        <div class="story__content">
 
         <div class="text-component">
             <h3 class="story__title margin-bottom-md">
@@ -18,5 +50,6 @@
             <p>@@excerpt …</p>
             <a href="@@href" class="link"> LEER MÁS</a>
         </div>
-    </div>
-</article> <!-- /ITEM ARTICLE -->
+        </div>
+    </article> <!-- /ITEM ARTICLE -->
+}

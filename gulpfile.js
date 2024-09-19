@@ -108,7 +108,8 @@ function includeHTMLES() {
 }
 
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async function () {
-
+  await moveContent();
+  await moveEsTranslation();
   await cleanCSS();
   await purgeCSS();
   // minify the scripts.js file and copy it to the dist folder
@@ -170,7 +171,7 @@ function purgeCSS() {
   return new Promise(function (resolve, reject) {
     var stream = gulp.src(cssFolder + '/style.css')
       .pipe(purgecss({
-        content: ['main/*.html', scriptsJsPath + '/scripts.js'],
+        content: ['main/*.html', scriptsJsPath + '/scripts.js', 'main/**/*.html'],
         safelist: {
           standard: ['.is-hidden', '.is-visible'],
           deep: [/class$/],
