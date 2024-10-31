@@ -11,6 +11,7 @@ var cleanCSS = require('gulp-clean-css');
 var purgecss = require('gulp-purgecss');
 var fileinclude = require('gulp-file-include');
 var del = require('del');
+var tailwindcss = require('tailwindcss');
 
 // js file paths
 var utilJsPath = 'node_modules/codyhouse-framework/main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
@@ -20,10 +21,18 @@ var scriptsJsPath = 'main/assets/js'; //folder for final scripts.js/scripts.min.
 // css file paths
 var cssFolder = 'main/assets/css'; // folder for final style.css/style-custom-prop-fallbac.css files
 var scssFilesPath = 'main/assets/css/**/*.scss'; // scss files to watch
+var tailwindPath = 'main/assets/css/tailwind.css';
 
 async function reload(done) {
   browserSync.reload();
   done();
+}
+
+// Processa Tailwind e autoprefixer
+function compileTailwind() {
+  return gulp.src(tailwindPath)
+    .pipe(postcss([tailwindcss(), autoprefixer()]))
+    .pipe(gulp.dest('dist/assets/css/'));
 }
 
 /* Gulp watch tasks */
@@ -108,7 +117,8 @@ function includeHTMLES() {
 }
 
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async function () {
-
+  await moveContent();
+  await moveEsTranslation();
   await cleanCSS();
   await purgeCSS();
   // minify the scripts.js file and copy it to the dist folder
@@ -118,16 +128,18 @@ gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], async functio
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
   await moveFavicon();
-  gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass', moveAssets, reload]));
+  gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass', moveAssets, compileTailwind, reload]));
   gulp.watch(componentsJsPath, gulp.series(['scripts', moveAssets, moveJS, reload]));
   //gulp.watch(scriptsJsPath + '/*.js', gulp.series(['scripts', moveAssets, reload]));
   await moveJS();
   gulp.watch(['main/*.html', 'main/components/*.html'], gulp.series([
+    compileTailwind,
     moveContent,
     includeHTML,
     reload
   ]));
   gulp.watch(['main/es/*.html', 'main/es/components/*.html'], gulp.series([
+    compileTailwind,
     moveEsTranslation,
     includeHTMLES,
     reload
@@ -170,7 +182,7 @@ function purgeCSS() {
   return new Promise(function (resolve, reject) {
     var stream = gulp.src(cssFolder + '/style.css')
       .pipe(purgecss({
-        content: ['main/*.html', scriptsJsPath + '/scripts.js'],
+        content: ['main/*.html', scriptsJsPath + '/scripts.js', 'main/**/*.html'],
         safelist: {
           standard: ['.is-hidden', '.is-visible'],
           deep: [/class$/],
@@ -212,7 +224,7 @@ function moveJS() {
 
 function moveAssets() {
   return new Promise(function (resolve, reject) {
-    var stream = gulp.src(['main/assets/img/**'], { allowEmpty: true })
+    var stream = gulp.src(['main/assets/img/**'], { allowEmpty: true, encoding: false })
       .pipe(gulp.dest(assetsFolder + 'img'));
 
     stream.on('finish', function () {

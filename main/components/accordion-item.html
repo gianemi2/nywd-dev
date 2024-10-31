@@ -1,0 +1,14 @@
+<div class="bg-white bg-red rounded-nywd group/accordion" data-open="false" data-js="accordion">
+    <div class="text-sm md:text-lg flex justify-between cursor-pointer p-6 md:py-6 md:px-12 leading-0 gap-2 items-center">
+        <b>@@title</b>
+        <i class="relative rounded-full h-8 w-8 bg-primary flex items-center justify-center fill-white text-white shrink-0 cursor-pointer">
+            <img src="./assets/img/minus.svg" class="w-7 fill-white open:block group-data-[open=false]/accordion:hidden"></img>
+            <img src="./assets/img/plus.svg" class="w-7 fill-white open:hidden  group-data-[open=true]/accordion:hidden"></object>
+        </i>
+    </div>
+    <div class="overflow-hidden max-h-0 transition-all duration-300 ease-in-out group-data-[open='true']/accordion:max-h-40">
+        <p class="px-6 pb-6 md:px-12">
+            @@text
+        </p>
+    </div>
+</div>

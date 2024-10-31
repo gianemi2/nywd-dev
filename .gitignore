@@ -3,5 +3,6 @@ main/assets/.DS_Store
 node_modules
 dist
 .git
+.gitregolo
 .gitbiren
 .DS_Store

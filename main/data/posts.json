@@ -1,14 +1,13 @@
 [
     {
-        "class": "col-4@md",
-        "href": "Smart-Stocking-Strategies-for-Optical-Stores.html",
-        "img": "/assets/img/post-smart-stocking.jpg",
-        "title": "5 Smart Stocking Strategies For Optical Stores",
-        "category": "Marketing Industry - February 26, 2024",
-        "excerpt": "Running a successful optical store requires more than just having a great selection of eyewear; it’s about smart stocking strategies that boost your bottom line. Here are comprehensive tips to help you manage your inventory effectively and stay ahead in the competitive eyewear market. Strategic Inventory Management. Effective inventory management is the cornerstone"
+        "hero": true,
+        "href": "the-psychology-of-eyewear.html",
+        "img": "/assets/img/the-psychology-of-eyewear-hero.jpg",
+        "title": "The Psychology Of Eyewear: Boost Sales With These Insights",
+        "category": "Marketing Industry - September 05, 2024",
+        "excerpt": "Glasses have evolved from mere vision aids to significant elements of personal style, conveying subtle cues about an individual’s personality, preferences, and professional standing. As an optical store owner, understanding these psychological cues can transform your sales strategy, allowing you to better cater to your customers’ needs and preferences, thereby boosting your sales and customer satisfaction."
     },
     {
-        "class": "col-4@md",
         "href": "making-the-right-choice-for-your-store.html",
         "img": "/assets/img/post-all-best-selling.jpg",
         "title": "Making The Right Choice For Your Store: Luxury Vs. Budget Eyewear",
@@ -16,15 +15,20 @@
         "excerpt": "Here’s a breakdown to help you choose wisely. When deciding what type of eyewear to stock in your store, understanding which options sell better can significantly influence your inventory decisions."
     },
     {
-        "class": "col-4@md",
-        "href": "the-psychology-of-eyewear.html",
-        "img": "/assets/img/trending-eyewear-styles-for-2023@2x.jpg",
-        "title": "The Psychology Of Eyewear: Boost Sales With These Insights",
-        "category": "Marketing Industry - September 05, 2024",
-        "excerpt": "Glasses have evolved from mere vision aids to significant elements of personal style, conveying subtle cues about an individual’s personality, preferences, and professional"
+        "href": "Smart-Stocking-Strategies-for-Optical-Stores.html",
+        "img": "/assets/img/post-5-smart-stocking.jpg",
+        "title": "5 Smart Stocking Strategies For Optical Stores",
+        "category": "Marketing Industry - February 26, 2024",
+        "excerpt": "Running a successful optical store requires more than just having a great selection of eyewear; it’s about smart stocking strategies that boost your bottom line. Here are comprehensive tips to help you manage your inventory effectively and stay ahead in the competitive eyewear market. Strategic Inventory Management. Effective inventory management is the cornerstone"
     },
     {
-        "class": "col-4@md",
+        "href": "Why-Choose-NYWD-As-Your-Wholesale-Designer-Eyewear-Distributor.html",
+        "img": "/assets/img/post-why-choose-nywd-wholesale.jpg",
+        "title": "Why Choose NYWD As Your Wholesale Designer Eyewear Distributor?",
+        "category": "Marketing Industry - June 01, 2023",
+        "excerpt": "NYWD makes stocking your eyewear store simple. With designer brands everyone loves, your customers will surely find the perfect designer sunglasses and frames. With our low wholesale prices, you’ll make great profits too! We have all of the latest styles from top designers. Plus, we offer classic styles that never go out of fashion. Whether your customers are looking"
+    },
+    {
         "href": "Trending-Eyewear-Styles.html",
         "img": "/assets/img/post-trending-eyewear-styles-for-2023.jpg",
         "title": "Trending Eyewear Styles for 2023",

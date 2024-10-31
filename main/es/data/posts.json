@@ -1,27 +1,30 @@
 [
     {
-        "class": "col-4@md",
-        "href": "Smart-Stocking-Strategies-for-Optical-Stores.html",
-        "img": "/assets/img/post-smart-stocking.jpg",
-        "title": "5 Estrategias Inteligentes de Almacenamiento para Tiendas de Óptica",
-        "excerpt": "Dirigir una tienda de óptica exitosa requiere más que solo tener una gran selección de gafas; se trata de estrategias inteligentes de almacenamiento que impulsen tus ganancias. Aquí tienes consejos completos para ayudarte a gestionar tu inventario de manera efectiva y mantenerte a la vanguardia en el competitivo mercado de gafas. Gestión Estratégica del Inventario"
+        "hero": true,
+        "href": "the-psychology-of-eyewear.html",
+        "img": "/assets/img/the-psychology-of-eyewear-hero.jpg",
+        "title": "La Psicología de las Gafas: Aumenta tus Ventas con estos Consejos",
+        "excerpt": "Las gafas han evolucionado de ser simples ayudas para la visión a convertirse en elementos significativos del estilo personal, transmitiendo señales sutiles sobre la personalidad, las preferencias y la posición profesional de una persona. Como dueño de una óptica, entender estas señales psicológicas puede transformar tu estrategia de ventas, permitiéndote atender mejor las necesidades y preferencias de tus clientes, aumentando así tus ventas y la satisfacción de tus clientes"
     },
     {
-        "class": "col-4@md",
         "href": "making-the-right-choice-for-your-store.html",
         "img": "/assets/img/post-all-best-selling.jpg",
         "title": "Haciendo la Elección Correcta para tu Tienda: Gafas de Lujo vs. Gafas Económicas",
         "excerpt": "Al decidir qué tipo de gafas almacenar en tu tienda, comprender qué opciones se venden mejor puede influir significativamente en tus decisiones de inventario. Aquí tienes un desglose para ayudarte a elegir sabiamente: Gafas de Lujo: Las marcas de alta gama son típicamente las mejores para tiendas en áreas acomodadas o aquellas que se especializan en productos exclusivos"
     },
     {
-        "class": "col-4@md",
-        "href": "the-psychology-of-eyewear.html",
-        "img": "/assets/img/trending-eyewear-styles-for-2023@2x.jpg",
-        "title": "La Psicología de las Gafas: Aumenta tus Ventas con estos Consejos",
-        "excerpt": "Las gafas han evolucionado de ser simples ayudas para la visión a convertirse en elementos significativos del estilo personal, transmitiendo señales sutiles sobre la personalidad, las preferencias y la posición profesional"
+        "href": "Smart-Stocking-Strategies-for-Optical-Stores.html",
+        "img": "/assets/img/post-5-smart-stocking.jpg",
+        "title": "5 Estrategias Inteligentes de Almacenamiento para Tiendas de Óptica",
+        "excerpt": "Dirigir una tienda de óptica exitosa requiere más que solo tener una gran selección de gafas; se trata de estrategias inteligentes de almacenamiento que impulsen tus ganancias. Aquí tienes consejos completos para ayudarte a gestionar tu inventario de manera efectiva y mantenerte a la vanguardia en el competitivo mercado de gafas. Gestión Estratégica del Inventario"
     },
     {
-        "class": "col-4@md",
+        "href": "Why-Choose-NYWD-As-Your-Wholesale-Designer-Eyewear-Distributor.html",
+        "img": "/assets/img/post-why-choose-nywd-wholesale.jpg",
+        "title": "Por Qué Elegir NYWD Como Tu Distribuidor de Gafas Al Por Mayor",
+        "excerpt": "NYWD hace posible que la reposición de la mercancía de tu tienda de gafas sea fácil. Con marcas de diseño que encantan a todo el mundo, tus clientes podrán encontrar sin duda las gafas de sol y monturas de diseño perfectas. ¡Con nuestros bajos precios de venta al por mayor, también harás grandes beneficios! Tenemos todos los últimos modelos de los mejores diseñadores"
+    },
+    {
         "href": "Trending-Eyewear-Styles.html",
         "img": "/assets/img/post-trending-eyewear-styles-for-2023.jpg",
         "title": "Estilos de gafas de moda para 2023",

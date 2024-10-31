@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    @@include('./components/head.html', {
+    "title": "Latest Trends in Designer Eyewear for Optical Stores | NYWD",
+    "description": "Discover the latest in eyewear fashion with NYWD’s blog. Explore trending styles, top designer brands, and essential insights for stocking your store with designer frames and sunglasses. Your go-to resource for wholesale designer eyewear."})
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+</head>
+
+<body class="data-[locked=true]:overflow-y-hidden h-full" data-locked="false">
+    <!-- Include header -->
+    @@include('components/header.html', {
+    "active": "home"
+    })
+    <div class="container mb-10 md:mb-12">
+        <h1 class="capitalize font-serif text-4xl md:text-5xl lg:text-6xl text-center leading-tight md:leading-tight lg:leading-tight">
+            Master your shopping experience <br class="hidden md:block"><span> with </span>
+            NYWD's
+            Exclusive
+            tutorials
+        </h1>
+    </div>
+    <div class="container mb-10 md:mb-12">
+        <p class="text-center font-bold mb-4 md:mb-2">
+            Member-Only Guides to Help Streamline Your Inventory
+        </p>
+        <p class="text-center">
+            From navigating the members’ area to optimizing your shopping and
+            streamlining your orders, these video tutorials make getting started easy.
+        </p>
+    </div>
+    <div class="container mb-10 md:mb-12">
+        @@include('components/title.html', {
+        "heading": "h1",
+        "class": "text-center",
+        "text": "Our Featured Tutorials"
+        })
+    </div>
+    <div class="container flex flex-col gap-8 mb-9">
+        <div class="columns-2 bg-accent rounded-nywd overflow-hidden flex flex-wrap">
+            <div class="xl:flex-1 xl:basis-1/2">
+                <!-- Modal toggle -->
+                <div data-modal-target="default-modal" data-modal-toggle="default-modal" class="relative cursor-pointer before:bg-black/30 before:absolute before:inset-0 video-popup-toggler flex items-center justify-center" type="button">
+                    <img src="./assets/img/faq-1.jpg" class="aspect-video group-hover:hidden" alt="">
+                    <img src="./assets/img/faq-1.jpg" class="aspect-video hidden group-hover:block">
+                </div>
+
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full max-h-full bg-black/85">
+                    <div class="relative p-4 w-[80%] max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-primary rounded-lg shadow aspect-video p-3">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ScMzIvxBSi4?si=Boo0pg0ijNfthHc7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col xl:flex-1 justify-center xl:basis-1/2 gap-4 p-5 md:p-10">
+                @@include('components/title.html', {
+                "heading": "h1",
+                "text": "Get Started With Nywd’s Shopping Portal"
+                })
+                <p>
+                    Get an overview of the primary navigation tools on the NYWD Shopping Portal, which are essential for
+                    members
+                    to get
+                    started and explore the website effectively. See how to browse categories, explore brands, and find
+                    specific
+                    products
+                    quickly using our search features.
+                </p>
+            </div>
+        </div>
+        <div class="columns-2 bg-accent rounded-nywd overflow-hidden flex flex-wrap">
+            <div class="xl:flex-1 xl:basis-1/2 xl:order-2">
+                <!-- Modal toggle -->
+                <div data-modal-target="default-modal" data-modal-toggle="default-modal" class="relative cursor-pointer before:bg-black/30 before:absolute before:inset-0 video-popup-toggler flex items-center justify-center group" type="button">
+                    <img src="./assets/img/faq-2.jpg" class="aspect-video group-hover:hidden" alt="">
+                    <img src="./assets/img/faq-2.jpg" class="aspect-video hidden group-hover:block">
+                </div>
+
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-[80%] max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-primary rounded-lg shadow aspect-video p-3">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ScMzIvxBSi4?si=Boo0pg0ijNfthHc7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center gap-4 p-5 md:p-10 xl:order-1  xl:flex-1  xl:basis-1/2">
+                @@include('components/title.html', {
+                "heading": "h1",
+                "text": "Inventory, Product Details & Adding To Cart"
+                })
+                <p>
+                    In this video, we guide you through filtering product inventory, viewing specific product details,
+                    and adding items to
+                    your cart, equipping members with the necessary knowledge to efficiently browse and select products,
+                    ultimately
+                    enhancing your overall shopping experience.
+                </p>
+            </div>
+        </div>
+        <div class="columns-2 bg-accent rounded-nywd overflow-hidden flex flex-wrap">
+            <div class="xl:flex-1 xl:basis-1/2">
+                <!-- Modal toggle -->
+                <div data-modal-target="default-modal" data-modal-toggle="default-modal" class="relative cursor-pointer before:bg-black/30 before:absolute before:inset-0 video-popup-toggler flex items-center justify-center" type="button">
+                    <img src="./assets/img/faq-3.jpg" class="aspect-video group-hover:hidden" alt="">
+                    <img src="./assets/img/faq-3.jpg" class="aspect-video hidden group-hover:block">
+                </div>
+
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-[80%] max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 aspect-video p-3">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ScMzIvxBSi4?si=Boo0pg0ijNfthHc7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center gap-4 p-5 md:p-10 xl:flex-1  xl:basis-1/2 ">
+                @@include('components/title.html', {
+                "heading": "h1",
+                "text": "Checkout, Orders & Account Management"
+                })
+                <p>
+                    This video walks you through viewing and modifying items in your cart, choosing payment and shipping
+                    options, and
+                    placing different types of orders. Additionally, it covers how to access and manage your order
+                    history, saved payment
+                    methods, and company data.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-muted relative group/outer" data-open="false" id="accordion-group">
+        <div class="container py-8 transition-all max-h-[80vh] group-data-[open='true']/outer:max-h-[9999px] overflow-hidden">
+            <div class="text-center mb-10">
+                @@include('components/title.html', {
+                "heading": "h2",
+                "text": "Frequently Asked Questions"
+                })
+            </div>
+            <div class="flex flex-col gap-4 relative">
+                @@loop("components/accordion-item.html", "data/home-accordion.json")
+            </div>
+        </div>
+        <div class="bg-gradient-to-b transition-all from-white/0 to-white absolute bottom-0 left-0 right-0 h-[25vh] z-10 flex items-center justify-center group-data-[open='true']/outer:h-0">
+            <div class="text-primary transition-all rounded-full hover:text-white hover:bg-primary absolute bottom-5" data-js="activators" data-target="#accordion-group">
+                <span class="group-data-[open='true']/outer:hidden">
+                    @@include("components/arrow-down.html", {
+                    "size": "7"
+                    })
+                </span>
+                <span class="group-data-[open='false']/outer:hidden">
+                    @@include("components/arrow-up.html", {
+                    "size": "7"
+                    })
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center mt-12 mb-8">
+            @@include("components/title.html", {
+            "heading": "h2",
+            "text": "Looking for More Industry Insights?"
+            })
+        </div>
+        <div class="gap-8 hidden md:flex">
+            @@loop('components/blog-item-faq.html', "data/blog-items.json")
+        </div>
+        <div class="-mx-4">
+            <div data-js="carousel" class=" w-full md:hidden bg-accent swiper pb-14 relative">
+                <div class="swiper-wrapper">
+                    @@loop('components/blog-item-faq.html', "data/blog-items.json")
+                </div>
+                <div class="swiper-pagination flex gap-1 justify-center bottom-5"></div>
+                <div class="swiper-button-prev w-7 h-7 absolute -bottom-3 top-auto mt-0 -translate-y-full bg-primary text-white">
+                </div>
+                <div class="swiper-button-next w-7 h-7 absolute -bottom-3 top-auto mt-0 -translate-y-full bg-primary text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-language').on('click', function (e) {
+                e.preventDefault();
+                $('.choose-language').toggleClass('open-language');
+            });
+
+        });
+    </script>
+    @@include('components/footer.html')
+</body>
+
+</html>

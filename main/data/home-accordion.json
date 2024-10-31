@@ -1,0 +1,62 @@
+[
+    {
+        "title": "How can I access the latest inventory on the NYWD Shopping Portal?",
+        "text": "The ‘New Arrivals’ category showcases the items that have been added to the inventory within the last seven days. This can be accessed through the Shop tab in the main menu."
+    },
+    {
+        "title": "How can I find a specific brand on the website?",
+        "text": "To find a specific brand, click on the Brands tab in the main menu. This will display a list of all the brands carried by NYWD, along with the number of SKUs available for each brand."
+    },
+    {
+        "title": "Can I search for items by characteristics or model number?",
+        "text": "Yes, the search page allows you to search for specific items by entering keywords such as brand names, colors, or model numbers. When viewing our inventory, you can also use the filters on the left side of the screen to refine your search by categories such as styles, colors, and country of origin."
+    },
+    {
+        "title": "Can I switch between English and Spanish on the website?",
+        "text": "Yes, to switch between English and Spanish, use the language drop-down menu located at the top right of the main menu."
+    },
+    {
+        "title": "How can I get additional support if needed?",
+        "text": "The \"Need Help\" link in the main menu provides access to useful FAQs and a way to contact the support team for further assistance."
+    },
+    {
+        "title": "How can I view more items per page on the product listing?",
+        "text": "By default, the site displays 25 items per page. However, you can adjust this to display 50, 75, or 100 items per page."
+    },
+    {
+        "title": "How can I see the exact quantity available for a product?",
+        "text": "If the quantity available is 50 or less, you'll see the exact number displayed. For quantities over 50, it'll be displayed as \"50+\"."
+    },
+    {
+        "title": "Can I download a list of products?",
+        "text": "Yes, you can download a list of products by clicking the \"download feed\" button at the bottom of any product list. For smaller lists, you can download directly to your computer, and for larger lists, you'll receive an email with the file."
+    },
+    {
+        "title": "How can I view detailed information about a specific product?",
+        "text": "To view detailed product information, click on the model number of the item you're interested in. This will take you to the Item Details page, where you can see multiple pictures, available colors, and detailed product specifications."
+    },
+    {
+        "title": "How can I add items to my cart?",
+        "text": "You can add items and desired quantities to your cart directly from the Item Details page or from any list by clicking the \"+\" button next to each item. The items added will appear in your cart, accessible by clicking the cart icon in the top right corner."
+    },
+    {
+        "title": "How can I access my cart?",
+        "text": "You can access your cart at any time by clicking the cart icon in the top right corner of the NYWD platform."
+    },
+    {
+        "title": "What payment options are available?",
+        "text": "You can pay with credit card, PayPal, or cryptocurrency (depending on your location)."
+    },
+    {
+        "title": "How are shipping costs calculated?",
+        "text": "Shipping costs are calculated based on the exact dimensions of your order. Domestic orders will see prices upfront, while international orders will be contacted by the logistics team once the order is packed."
+    },
+    {
+        "title": "What are the different types of orders I can place?",
+        "text": "You can place daily orders (automatically check out at 2 PM Eastern Time), weekly orders (check out once a week), or immediate single orders (simply accept reseller agreement and submit)."
+    },
+    {
+        "title": "How can I manage my orders and account settings?",
+        "text": "In the My Accounts section, you can manage your orders, payment methods, and company data. You can view order history, track shipments, reorder items, save payment information, and update billing addresses."
+    }
+]
