@@ -6,3 +6,6 @@ dist
 .gitregolo
 .gitbiren
 .DS_Store
+
+yarn.lock
+package-lock.json
