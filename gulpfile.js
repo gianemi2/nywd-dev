@@ -161,6 +161,7 @@ gulp.task('dist', async function () {
   await moveJS();
   // copy all the assets inside main/assets/img folder to the dist folder
   await moveAssets();
+  await compileTailwind();
   await moveFavicon();
   // copy all html files inside main folder to the dist folder 
   await moveContent();
