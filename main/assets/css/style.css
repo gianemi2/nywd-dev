@@ -2814,8 +2814,7 @@ html:not(.js) .no-js\:is-hidden {
 .sr-only, .sr-only-focusable:not(:focus):not(:focus-within) {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -16413,8 +16412,7 @@ Usage: codyhouse.co/license
 }
 .offnav__a11y-close-btn:focus {
   clip: auto;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   outline: 3px solid var(--color-primary);
 }
 
