@@ -12058,7 +12058,8 @@ html:not(.js) .no-js\:is-hidden {
     display: none !important;
   }
 }
-:root, [data-theme=default] {
+:root,
+[data-theme=default] {
   --color-primary-darker: hsl(210, 9%, 0%);
   --color-primary-darker-h: 210;
   --color-primary-darker-s: 9%;

@@ -1,4 +1,4 @@
-@use '../base' as *;
+@use "../base" as *;
 
 // --------------------------------
 
@@ -6,7 +6,8 @@
 
 // --------------------------------
 
-:root, [data-theme="default"] {
+:root,
+[data-theme="default"] {
   // main
   @include defineColorHSL(--color-primary-darker, 210, 9%, 0%);
   @include defineColorHSL(--color-primary-dark, 210, 9%, 9%);
@@ -129,32 +130,72 @@
 }
 
 // background color
-.bg-secondary-darker { background-color: alpha(var(--color-secondary-darker), var(--bg-o, 1)); }
-.bg-secondary-dark { background-color: alpha(var(--color-secondary-dark), var(--bg-o, 1)); }
-.bg-secondary { background-color: alpha(var(--color-secondary), var(--bg-o, 1)); }
-.bg-secondary-light { background-color: alpha(var(--color-secondary-light), var(--bg-o, 1)); }
-.bg-secondary-lighter { background-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1)); }
+.bg-secondary-darker {
+  background-color: alpha(var(--color-secondary-darker), var(--bg-o, 1));
+}
+.bg-secondary-dark {
+  background-color: alpha(var(--color-secondary-dark), var(--bg-o, 1));
+}
+.bg-secondary {
+  background-color: alpha(var(--color-secondary), var(--bg-o, 1));
+}
+.bg-secondary-light {
+  background-color: alpha(var(--color-secondary-light), var(--bg-o, 1));
+}
+.bg-secondary-lighter {
+  background-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1));
+}
 
 // background gradient
-.bg-gradient-primary { background-image: radial-gradient(var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
-.bg-gradient-primary-top { background-image: linear-gradient(0deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
-.bg-gradient-primary-right { background-image: linear-gradient(90deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
-.bg-gradient-primary-bottom { background-image: linear-gradient(180deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
-.bg-gradient-primary-left { background-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }
+.bg-gradient-primary {
+  background-image: radial-gradient(var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
+.bg-gradient-primary-top {
+  background-image: linear-gradient(0deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
+.bg-gradient-primary-right {
+  background-image: linear-gradient(90deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
+.bg-gradient-primary-bottom {
+  background-image: linear-gradient(180deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
+.bg-gradient-primary-left {
+  background-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
 
 // border gradient
-.border-gradient-primary { border-image: radial-gradient(var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1; }
-.border-gradient-primary-top { border-image: linear-gradient(0deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1; }
-.border-gradient-primary-right { border-image: linear-gradient(90deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1; }
-.border-gradient-primary-bottom { border-image: linear-gradient(180deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1; }
-.border-gradient-primary-left { border-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1; }
+.border-gradient-primary {
+  border-image: radial-gradient(var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1;
+}
+.border-gradient-primary-top {
+  border-image: linear-gradient(0deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1;
+}
+.border-gradient-primary-right {
+  border-image: linear-gradient(90deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1;
+}
+.border-gradient-primary-bottom {
+  border-image: linear-gradient(180deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1;
+}
+.border-gradient-primary-left {
+  border-image: linear-gradient(270deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)) 1;
+}
 
 // border color
-.border-secondary-darker { border-color: alpha(var(--color-secondary-darker), var(--bg-o, 1)); }
-.border-secondary-dark { border-color: alpha(var(--color-secondary-dark), var(--bg-o, 1)); }
-.border-secondary { border-color: alpha(var(--color-secondary), var(--bg-o, 1)); }
-.border-secondary-light { border-color: alpha(var(--color-secondary-light), var(--bg-o, 1)); }
-.border-secondary-lighter { border-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1)); }
+.border-secondary-darker {
+  border-color: alpha(var(--color-secondary-darker), var(--bg-o, 1));
+}
+.border-secondary-dark {
+  border-color: alpha(var(--color-secondary-dark), var(--bg-o, 1));
+}
+.border-secondary {
+  border-color: alpha(var(--color-secondary), var(--bg-o, 1));
+}
+.border-secondary-light {
+  border-color: alpha(var(--color-secondary-light), var(--bg-o, 1));
+}
+.border-secondary-lighter {
+  border-color: alpha(var(--color-secondary-lighter), var(--bg-o, 1));
+}
 
 // --------------------------------
 
